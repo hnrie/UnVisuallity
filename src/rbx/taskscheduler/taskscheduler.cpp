@@ -105,14 +105,15 @@ uintptr_t taskscheduler::get_script_context() {
 
 lua_State* taskscheduler::get_roblox_state() {
     uintptr_t script_context = get_script_context();
-    *reinterpret_cast<BYTE*>(script_context + rbx::offsets::script_context::require_check) = TRUE;
 
-    uintptr_t global_state = script_context + rbx::offsets::script_context::global_state;
+    *reinterpret_cast<BOOLEAN*>(script_context + rbx::offsets::script_context::require_check) = TRUE;
 
-    uintptr_t identity = 2;
-    uintptr_t base_instance = 0;
+    auto Address = script_context + rbx::offsets::script_context::encrypted_state;
+    auto EncryptedState = reinterpret_cast<uint32_t*>(Address);
 
-    return rbx::script_context::decrypt_state(rbx::script_context::get_global_state(global_state, &identity, &base_instance) + rbx::offsets::script_context::decrypt_state);
+    uint32_t Low = EncryptedState[0] ^ static_cast<uint32_t>(Address);
+    uint32_t High = EncryptedState[1] ^ static_cast<uint32_t>(Address);
+    return reinterpret_cast<lua_State*>((static_cast<uint64_t>(High) << 32) | Low);
 }
 
 void taskscheduler::set_fps(double fps) {
