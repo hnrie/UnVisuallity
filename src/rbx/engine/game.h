@@ -131,6 +131,7 @@ namespace rbx {
             inline constexpr uintptr_t decrypt_state = 0x88; // didnt change
 
             inline constexpr uintptr_t require_check = 0x870; //
+            inline constexpr uintptr_t encrypted_state = 0x210;
         }
 
     }
