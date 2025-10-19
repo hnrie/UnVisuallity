@@ -15,32 +15,19 @@
 #include "zstd.h"
 #include "xxhash.h"
 
-namespace constants {
-    constexpr const char* BYTECODE_MAGIC = "RSB1";
-    constexpr size_t DATA_SIZE_OFFSET = 4;
-    constexpr size_t COMPRESSED_DATA_OFFSET = 8;
-    constexpr uint32_t XXHASH_SEED = 42u;
-    constexpr uint32_t ENCRYPTION_CONSTANT_1 = 41u;
-    constexpr size_t HASH_BYTES_SIZE = 4;
-    constexpr uint8_t BYTECODE_OBFUSCATION_KEY = 227;
-}
-
-// Custom bytecode encoder to obfuscate Luau bytecode.
 class bytecode_encoder_t : public Luau::BytecodeEncoder { // thx shade :P
-    // Encodes the bytecode by multiplying each opcode by a constant.
     inline void encode(uint32_t* data, size_t count) override {
         for (auto i = 0; i < count;)
         {
             uint8_t op = LUAU_INSN_OP(data[i]);
             const auto oplen = Luau::getOpLength((LuauOpcode)op);
-            uint8_t new_op = op * constants::BYTECODE_OBFUSCATION_KEY;
+            uint8_t new_op = op * 227;
             data[i] = (new_op) | (data[i] & ~0xff);
             i += oplen;
         }
     }
 };
 
-// Sets capabilities for a given proto.
 void set_capabilities(Proto *proto, uintptr_t* caps) {
     if (!proto)
         return;
@@ -51,29 +38,28 @@ void set_capabilities(Proto *proto, uintptr_t* caps) {
         set_capabilities(proto->p[i], caps);
 }
 
-// Compresses and encrypts the given bytecode.
 std::string compress_bytecode(std::string_view bytecode) {
     // Create a buffer.
     const auto data_size = bytecode.size();
     const auto max_size = ZSTD_compressBound(data_size);
-    auto buffer = std::vector<char>(max_size + constants::COMPRESSED_DATA_OFFSET);
+    auto buffer = std::vector<char>(max_size + 8);
 
     // Copy RSB1 and data size into the buffer.
-    strcpy_s(&buffer[0], buffer.capacity(), OBF(constants::BYTECODE_MAGIC));
-    memcpy_s(&buffer[constants::DATA_SIZE_OFFSET], buffer.capacity(), &data_size, sizeof(data_size));
+    strcpy_s(&buffer[0], buffer.capacity(), OBF("RSB1"));
+    memcpy_s(&buffer[4], buffer.capacity(), &data_size, sizeof(data_size));
 
     // Copy compressed bytecode into the buffer.
-    const auto compressed_size = ZSTD_compress(&buffer[constants::COMPRESSED_DATA_OFFSET], max_size, bytecode.data(), data_size, 3);
+    const auto compressed_size = ZSTD_compress(&buffer[8], max_size, bytecode.data(), data_size, ZSTD_maxCLevel());
     if (ZSTD_isError(compressed_size))
         return OBF("");
 
     // Encrypt the buffer.
-    const auto size = compressed_size + constants::COMPRESSED_DATA_OFFSET;
-    const auto key = XXH32(buffer.data(), size, constants::XXHASH_SEED);
+    const auto size = compressed_size + 8;
+    const auto key = XXH32(buffer.data(), size, 42u);
     const auto bytes = reinterpret_cast<const uint8_t*>(&key);
 
     for (auto i = 0u; i < size; ++i)
-        buffer[i] ^= bytes[i % constants::HASH_BYTES_SIZE] + i * constants::ENCRYPTION_CONSTANT_1;
+        buffer[i] ^= bytes[i % 4] + i * 41u;
 
     // Create and return output.
     return std::string(buffer.data(), size);
@@ -100,27 +86,28 @@ std::string execution::compile(const std::string& code) {
     return compress_bytecode(bytecode);
 }
 
-// Decompresses and decrypts the given bytecode.
 std::string execution::decompress_bytecode(const std::string& source) const {
+    constexpr const char bytecode_magic[] = "RSB1";
+
     std::string input = source;
 
-    std::uint8_t hash_bytes[constants::HASH_BYTES_SIZE];
-    memcpy(hash_bytes, &input[0], constants::HASH_BYTES_SIZE);
+    std::uint8_t hash_bytes[4];
+    memcpy(hash_bytes, &input[0], 4);
 
-    for (auto i = 0u; i < constants::HASH_BYTES_SIZE; ++i) {
-        hash_bytes[i] ^= constants::BYTECODE_MAGIC[i];
-        hash_bytes[i] -= i * constants::ENCRYPTION_CONSTANT_1;
+    for (auto i = 0u; i < 4; ++i) {
+        hash_bytes[i] ^= bytecode_magic[i];
+        hash_bytes[i] -= i * 41;
     }
 
     for ( size_t i = 0; i < input.size( ); ++i )
-        input[i] ^= hash_bytes[i % constants::HASH_BYTES_SIZE] + i * constants::ENCRYPTION_CONSTANT_1;
+        input[i] ^= hash_bytes[i % 4] + i * 41;
 
-    XXH32(&input[0], input.size(), constants::XXHASH_SEED);
+    XXH32(&input[0], input.size(), 42);
 
     std::uint32_t data_size;
-    memcpy(&data_size, &input[constants::DATA_SIZE_OFFSET], sizeof(data_size));
+    memcpy(&data_size, &input[4], 4);
     std::vector<std::uint8_t> data(data_size);
-    ZSTD_decompress(&data[0], data_size, &input[constants::COMPRESSED_DATA_OFFSET], input.size() - constants::COMPRESSED_DATA_OFFSET);
+    ZSTD_decompress(&data[0], data_size, &input[8], input.size() - 8);
 
     return std::string(reinterpret_cast<char*>(&data[0]), data_size);
 }

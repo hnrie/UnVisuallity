@@ -14,84 +14,84 @@ namespace rbx {
     namespace rvas {
 
         namespace standard_out {
-            inline const uintptr_t printf = 0x15469f0; // updated
+            inline const uintptr_t printf = 0x1833E60; // updated
         }
 
         namespace data_model
         {
-            inline const uintptr_t get = 0x66ea5e8; // updated
+            inline const uintptr_t get = 0x7268A88; // updated
         }
 
         namespace taskscheduler {
-            inline const uintptr_t taskschedulermk2 = 0x67AB9E8; // 
-            inline const uintptr_t taskschedulermk22 = 0x67a9b98; // 
+            inline const uintptr_t taskschedulermk2 = 0x75BE1B8; //
+            inline const uintptr_t taskschedulermk22 = 0x67a9b98; //
         }
 
         namespace script_context {
-            inline const uintptr_t get_global_state = 0xDA0660; // updated
-            inline const uintptr_t decrypt_state = 0xB25660; // updated
+            inline const uintptr_t get_global_state = 0xED2BD0; // updated
+            inline const uintptr_t decrypt_state = 0x11D1A50; // updated
 
-            inline const uintptr_t task_defer = 0xfc9ca0; // updated
+            inline const uintptr_t task_defer = 0x141C030; // updated
 
-            inline const uintptr_t resume = 0xdb0bb0; // updated 
+            inline const uintptr_t resume = 0x11B1930; // updated
         }
 
         namespace property_descriptor {
-            inline const uintptr_t get_property = 0xa3ddb0; // updated
-            inline const uintptr_t ktable = 0x62d04b0; // updated 
+            inline const uintptr_t get_property = 0xDD6180; // updated
+            inline const uintptr_t ktable = 0x6A23E80; // updated
         }
 
         namespace lua_bridge {
-            inline const uintptr_t push = 0xe7cbc0; // updated 
+            inline const uintptr_t push = 0x122EF60; // updated
         }
 
         namespace identity {
-            inline const uintptr_t get_identity_struct = 0x37f57d0; // updated
+            inline const uintptr_t get_identity_struct = 0x3D23FC0; // updated
             inline const uintptr_t identity_struct = 0x6304418; // updated
         }
 
         namespace fast_flags {
             inline const uintptr_t singleton = 0x63201A8; // updated
-            inline const uintptr_t set_fast_flag = 0x37ED750; // updated
+            inline const uintptr_t set_fast_flag = 0x3F28490; // updated
             inline const uintptr_t get_fast_flag = 0x37EE1E0; // updated
 
-            inline const uintptr_t lock_violation_script_crash = 0x5F3E028; // updated
-            inline const uintptr_t lock_violation_instance_crash = 0x5f4a5a8; // updated 
+            inline const uintptr_t lock_violation_script_crash = 0x6119778; // updated
+            inline const uintptr_t lock_violation_instance_crash = 0x61256A8; // updated
          }
 
         namespace click_detector {
-            inline const uintptr_t fire = 0x1c4e4e0; // updated | xref: E8 ? ? ? ? 48 8B 45 ? 48 89 38 | 0
-            inline const uintptr_t fire_right = 0x1c4e680; // updated | 3
-            inline const uintptr_t hover_enter = 0x1c4fa80;// updated | 1
-            inline const uintptr_t hover_leave = 0x1c4fc20;// updated   | 2
+            inline const uintptr_t fire = 0x1E992A0; // updated | xref: E8 ? ? ? ? 48 8B 45 ? 48 89 38 | 0
+            inline const uintptr_t fire_right = 0x1E99440; // updated | 3
+            inline const uintptr_t hover_enter = 0x1E9A840;// updated | 1
+            inline const uintptr_t hover_leave = 0x1E9A9E0;// updated   | 2
         }
 
         namespace proximity_prompt {
-            inline const uintptr_t fire = 0x1d236a0; // updated
+            inline const uintptr_t fire = 0x1EF47E0; // updated
         }
 
         namespace base_part {
-            inline const uintptr_t touch_interest = 0x141b380; // updated
+            inline const uintptr_t touch_interest = 0x21A2E80; // updated
         }
 
         namespace lua_arguments {
-            inline constexpr uintptr_t get = 0xbbc600; // updated  | "Argument %d missing or nil"
-            inline constexpr uintptr_t variant_cast_int = 0x14d8290; //  updated | 48 89 5C 24 ? 48 89 6C 24 ? 48 89 74 24 ? 57 48 83 EC ? 48 8B 19 48 8B F9 0F 29 74 24
-            inline constexpr uintptr_t variant_cast_int64 = 0x14d85a0; // updated | 48 89 5C 24 ? 48 89 6C 24 ? 48 89 74 24 ? 57 48 83 EC ? 48 8B 19 48 8B F9 E8 ? ? ? ? 33 F6
-            inline constexpr uintptr_t variant_cast_float = 0x14d8be0; // updated  | 48 89 5C 24 ? 48 89 6C 24 ? 56 57 41 56 48 83 EC ? 48 8B 19 48 8B F9 0F 29 74 24 ? E8 ? ? ? ? 48 8B 2F 45 33 F6 48 3B D8 75 ? E8 ? ? ? ? 48 3B E8 0F 85 ? ? ? ? 4C 39 77 ? 48 8D 47 ? 49 0F 44 C6 F2 0F 10 30
+            inline constexpr uintptr_t get = 0xEE59E0; // updated  | "Argument %d missing or nil"
+            inline constexpr uintptr_t variant_cast_int = 0x1810D40; //  updated | 48 89 5C 24 ? 48 89 6C 24 ? 48 89 74 24 ? 57 48 83 EC ? 48 8B 19 48 8B F9 0F 29 74 24
+            inline constexpr uintptr_t variant_cast_int64 = 0x1810F50; // updated | 48 89 5C 24 ? 48 89 6C 24 ? 48 89 74 24 ? 57 48 83 EC ? 48 8B 19 48 8B F9 E8 ? ? ? ? 33 F6
+            inline constexpr uintptr_t variant_cast_float = 0x1811390; // updated  | 48 89 5C 24 ? 48 89 6C 24 ? 56 57 41 56 48 83 EC ? 48 8B 19 48 8B F9 0F 29 74 24 ? E8 ? ? ? ? 48 8B 2F 45 33 F6 48 3B D8 75 ? E8 ? ? ? ? 48 3B E8 0F 85 ? ? ? ? 4C 39 77 ? 48 8D 47 ? 49 0F 44 C6 F2 0F 10 30
         }
 
         namespace app_data {
-            inline constexpr uintptr_t singleton = 0x66ea2f8; // updated
+            inline constexpr uintptr_t singleton = 0x72687F8; // updated
         }
 
         namespace luau {
-            inline const uintptr_t luau_execute = 0x275d280;// updated | 80 79 ? ? 0F 85 ? ? ? ? E9
-            inline const uintptr_t luah_dummynode = 0x468d6c8; // updated
-            inline const uintptr_t luao_nilobject = 0x468dca8; // updated
-            inline const uintptr_t luac_step = 0x2729fa0; // updated 
+            inline const uintptr_t luau_execute = 0x36825D0;// updated | 80 79 ? ? 0F 85 ? ? ? ? E9
+            inline const uintptr_t luah_dummynode = 0x51B4328; // updated
+            inline const uintptr_t luao_nilobject = 0x51B4908; // updated
+            inline const uintptr_t luac_step = 0x2729fa0; // updated
 
-            inline const uintptr_t vm_load = 0xb28790; // updated
+            inline const uintptr_t vm_load = 0x1366360; // updated
         }
 
     }
@@ -109,7 +109,7 @@ namespace rbx {
         namespace instance { // didnt change
             inline constexpr uintptr_t class_descriptor = 0x18;
             inline constexpr uintptr_t parent = 0x50;
-            inline constexpr uintptr_t name = 0x78;
+            inline constexpr uintptr_t name = 0x80;
             inline constexpr uintptr_t children = 0x80;
         }
 
@@ -130,7 +130,7 @@ namespace rbx {
             inline constexpr uintptr_t global_state = 0x140; // 
             inline constexpr uintptr_t decrypt_state = 0x88; // didnt change
 
-            inline constexpr uintptr_t require_check = 0x6e0; // 
+            inline constexpr uintptr_t require_check = 0x870; //
         }
 
     }
