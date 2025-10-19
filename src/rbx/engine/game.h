@@ -96,6 +96,12 @@ namespace rbx {
 
     }
 
+    namespace job_names {
+        inline constexpr const char* waiting_hybrid_scripts_job = "WaitingHybridScriptsJob";
+        inline constexpr const char* lua_app = "LuaApp";
+        inline constexpr const char* ugc = "Ugc";
+    }
+
     namespace offsets {
 
         namespace taskscheduler { // didnt change
