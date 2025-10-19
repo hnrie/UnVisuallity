@@ -1,0 +1,1643 @@
+{
+	"archive" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:x64",
+				"role" : "flags"
+			}
+		]
+	},
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/zlibstatic.lib"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"install",
+			"add_compile_options",
+			"add_definitions",
+			"cpr_option",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"cmake-build-release/_deps/zlib-src/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1074,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1204,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 281,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 78,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 65,
+				"parent" : 5
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 79,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 65,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 19,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 427,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 336,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 158,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 785,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 803,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 819,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 776,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 809,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 875,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 846,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 831,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 837,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 863,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 884,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 148,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 504,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 503,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1089,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -std:c11 -MD"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/W3"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 6,
+					"define" : "CPR_ENABLE_CURL_HTTP_ONLY"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "CPR_ENABLE_SSL"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "CURL_STATICLIB"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "HAVE_THREAD_LOCAL"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "NO_FSEEKO"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "WITH_GZFILEOP"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "X86_AVX2"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "X86_AVX512"
+				},
+				{
+					"backtrace" : 15,
+					"define" : "X86_AVX512VNNI"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "X86_FEATURES"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "X86_MASK_INTRIN"
+				},
+				{
+					"backtrace" : 18,
+					"define" : "X86_PCLMULQDQ_CRC"
+				},
+				{
+					"backtrace" : 19,
+					"define" : "X86_SSE2"
+				},
+				{
+					"backtrace" : 20,
+					"define" : "X86_SSE42"
+				},
+				{
+					"backtrace" : 21,
+					"define" : "X86_SSE42_CRC_INTRIN"
+				},
+				{
+					"backtrace" : 22,
+					"define" : "X86_SSSE3"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "X86_VPCLMULQDQ_CRC"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "ZLIB_COMPAT"
+				},
+				{
+					"backtrace" : 25,
+					"define" : "_CRT_NONSTDC_NO_DEPRECATE"
+				},
+				{
+					"backtrace" : 26,
+					"define" : "_CRT_SECURE_NO_DEPRECATE"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 27,
+					"path" : "C:/Users/user/CLionProjects/Phantom/Dependencies/cpr/cmake-build-release/_deps/zlib-build"
+				},
+				{
+					"backtrace" : 27,
+					"path" : "C:/Users/user/CLionProjects/Phantom/Dependencies/cpr/cmake-build-release/_deps/zlib-src"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				39,
+				40,
+				41,
+				74,
+				75,
+				76
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -std:c11 -MD"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/W3"
+				},
+				{
+					"fragment" : ""
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 6,
+					"define" : "CPR_ENABLE_CURL_HTTP_ONLY"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "CPR_ENABLE_SSL"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "CURL_STATICLIB"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "HAVE_THREAD_LOCAL"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "NO_FSEEKO"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "WITH_GZFILEOP"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "X86_AVX2"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "X86_AVX512"
+				},
+				{
+					"backtrace" : 15,
+					"define" : "X86_AVX512VNNI"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "X86_FEATURES"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "X86_MASK_INTRIN"
+				},
+				{
+					"backtrace" : 18,
+					"define" : "X86_PCLMULQDQ_CRC"
+				},
+				{
+					"backtrace" : 19,
+					"define" : "X86_SSE2"
+				},
+				{
+					"backtrace" : 20,
+					"define" : "X86_SSE42"
+				},
+				{
+					"backtrace" : 21,
+					"define" : "X86_SSE42_CRC_INTRIN"
+				},
+				{
+					"backtrace" : 22,
+					"define" : "X86_SSSE3"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "X86_VPCLMULQDQ_CRC"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "ZLIB_COMPAT"
+				},
+				{
+					"backtrace" : 25,
+					"define" : "_CRT_NONSTDC_NO_DEPRECATE"
+				},
+				{
+					"backtrace" : 26,
+					"define" : "_CRT_SECURE_NO_DEPRECATE"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 27,
+					"path" : "C:/Users/user/CLionProjects/Phantom/Dependencies/cpr/cmake-build-release/_deps/zlib-build"
+				},
+				{
+					"backtrace" : 27,
+					"path" : "C:/Users/user/CLionProjects/Phantom/Dependencies/cpr/cmake-build-release/_deps/zlib-src"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				30
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -std:c11 -MD"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/W3"
+				},
+				{
+					"fragment" : "/arch:AVX2 "
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 6,
+					"define" : "CPR_ENABLE_CURL_HTTP_ONLY"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "CPR_ENABLE_SSL"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "CURL_STATICLIB"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "HAVE_THREAD_LOCAL"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "NO_FSEEKO"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "WITH_GZFILEOP"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "X86_AVX2"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "X86_AVX512"
+				},
+				{
+					"backtrace" : 15,
+					"define" : "X86_AVX512VNNI"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "X86_FEATURES"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "X86_MASK_INTRIN"
+				},
+				{
+					"backtrace" : 18,
+					"define" : "X86_PCLMULQDQ_CRC"
+				},
+				{
+					"backtrace" : 19,
+					"define" : "X86_SSE2"
+				},
+				{
+					"backtrace" : 20,
+					"define" : "X86_SSE42"
+				},
+				{
+					"backtrace" : 21,
+					"define" : "X86_SSE42_CRC_INTRIN"
+				},
+				{
+					"backtrace" : 22,
+					"define" : "X86_SSSE3"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "X86_VPCLMULQDQ_CRC"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "ZLIB_COMPAT"
+				},
+				{
+					"backtrace" : 25,
+					"define" : "_CRT_NONSTDC_NO_DEPRECATE"
+				},
+				{
+					"backtrace" : 26,
+					"define" : "_CRT_SECURE_NO_DEPRECATE"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 27,
+					"path" : "C:/Users/user/CLionProjects/Phantom/Dependencies/cpr/cmake-build-release/_deps/zlib-build"
+				},
+				{
+					"backtrace" : 27,
+					"path" : "C:/Users/user/CLionProjects/Phantom/Dependencies/cpr/cmake-build-release/_deps/zlib-src"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				31,
+				32,
+				33,
+				34
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -std:c11 -MD"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/W3"
+				},
+				{
+					"fragment" : "/arch:AVX512 "
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 6,
+					"define" : "CPR_ENABLE_CURL_HTTP_ONLY"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "CPR_ENABLE_SSL"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "CURL_STATICLIB"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "HAVE_THREAD_LOCAL"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "NO_FSEEKO"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "WITH_GZFILEOP"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "X86_AVX2"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "X86_AVX512"
+				},
+				{
+					"backtrace" : 15,
+					"define" : "X86_AVX512VNNI"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "X86_FEATURES"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "X86_MASK_INTRIN"
+				},
+				{
+					"backtrace" : 18,
+					"define" : "X86_PCLMULQDQ_CRC"
+				},
+				{
+					"backtrace" : 19,
+					"define" : "X86_SSE2"
+				},
+				{
+					"backtrace" : 20,
+					"define" : "X86_SSE42"
+				},
+				{
+					"backtrace" : 21,
+					"define" : "X86_SSE42_CRC_INTRIN"
+				},
+				{
+					"backtrace" : 22,
+					"define" : "X86_SSSE3"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "X86_VPCLMULQDQ_CRC"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "ZLIB_COMPAT"
+				},
+				{
+					"backtrace" : 25,
+					"define" : "_CRT_NONSTDC_NO_DEPRECATE"
+				},
+				{
+					"backtrace" : 26,
+					"define" : "_CRT_SECURE_NO_DEPRECATE"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 27,
+					"path" : "C:/Users/user/CLionProjects/Phantom/Dependencies/cpr/cmake-build-release/_deps/zlib-build"
+				},
+				{
+					"backtrace" : 27,
+					"path" : "C:/Users/user/CLionProjects/Phantom/Dependencies/cpr/cmake-build-release/_deps/zlib-src"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				35,
+				36
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -std:c11 -MD"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/W3"
+				},
+				{
+					"fragment" : " "
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 6,
+					"define" : "CPR_ENABLE_CURL_HTTP_ONLY"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "CPR_ENABLE_SSL"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "CURL_STATICLIB"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "HAVE_THREAD_LOCAL"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "NO_FSEEKO"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "WITH_GZFILEOP"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "X86_AVX2"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "X86_AVX512"
+				},
+				{
+					"backtrace" : 15,
+					"define" : "X86_AVX512VNNI"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "X86_FEATURES"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "X86_MASK_INTRIN"
+				},
+				{
+					"backtrace" : 18,
+					"define" : "X86_PCLMULQDQ_CRC"
+				},
+				{
+					"backtrace" : 19,
+					"define" : "X86_SSE2"
+				},
+				{
+					"backtrace" : 20,
+					"define" : "X86_SSE42"
+				},
+				{
+					"backtrace" : 21,
+					"define" : "X86_SSE42_CRC_INTRIN"
+				},
+				{
+					"backtrace" : 22,
+					"define" : "X86_SSSE3"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "X86_VPCLMULQDQ_CRC"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "ZLIB_COMPAT"
+				},
+				{
+					"backtrace" : 25,
+					"define" : "_CRT_NONSTDC_NO_DEPRECATE"
+				},
+				{
+					"backtrace" : 26,
+					"define" : "_CRT_SECURE_NO_DEPRECATE"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 27,
+					"path" : "C:/Users/user/CLionProjects/Phantom/Dependencies/cpr/cmake-build-release/_deps/zlib-build"
+				},
+				{
+					"backtrace" : 27,
+					"path" : "C:/Users/user/CLionProjects/Phantom/Dependencies/cpr/cmake-build-release/_deps/zlib-src"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				37,
+				38,
+				42,
+				43
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -std:c11 -MD"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/W3"
+				},
+				{
+					"fragment" : "   "
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 6,
+					"define" : "CPR_ENABLE_CURL_HTTP_ONLY"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "CPR_ENABLE_SSL"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "CURL_STATICLIB"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "HAVE_THREAD_LOCAL"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "NO_FSEEKO"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "WITH_GZFILEOP"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "X86_AVX2"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "X86_AVX512"
+				},
+				{
+					"backtrace" : 15,
+					"define" : "X86_AVX512VNNI"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "X86_FEATURES"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "X86_MASK_INTRIN"
+				},
+				{
+					"backtrace" : 18,
+					"define" : "X86_PCLMULQDQ_CRC"
+				},
+				{
+					"backtrace" : 19,
+					"define" : "X86_SSE2"
+				},
+				{
+					"backtrace" : 20,
+					"define" : "X86_SSE42"
+				},
+				{
+					"backtrace" : 21,
+					"define" : "X86_SSE42_CRC_INTRIN"
+				},
+				{
+					"backtrace" : 22,
+					"define" : "X86_SSSE3"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "X86_VPCLMULQDQ_CRC"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "ZLIB_COMPAT"
+				},
+				{
+					"backtrace" : 25,
+					"define" : "_CRT_NONSTDC_NO_DEPRECATE"
+				},
+				{
+					"backtrace" : 26,
+					"define" : "_CRT_SECURE_NO_DEPRECATE"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 27,
+					"path" : "C:/Users/user/CLionProjects/Phantom/Dependencies/cpr/cmake-build-release/_deps/zlib-build"
+				},
+				{
+					"backtrace" : 27,
+					"path" : "C:/Users/user/CLionProjects/Phantom/Dependencies/cpr/cmake-build-release/_deps/zlib-src"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				44
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -std:c11 -MD"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/W3"
+				},
+				{
+					"fragment" : "    /arch:AVX512 "
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 6,
+					"define" : "CPR_ENABLE_CURL_HTTP_ONLY"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "CPR_ENABLE_SSL"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "CURL_STATICLIB"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "HAVE_THREAD_LOCAL"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "NO_FSEEKO"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "WITH_GZFILEOP"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "X86_AVX2"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "X86_AVX512"
+				},
+				{
+					"backtrace" : 15,
+					"define" : "X86_AVX512VNNI"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "X86_FEATURES"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "X86_MASK_INTRIN"
+				},
+				{
+					"backtrace" : 18,
+					"define" : "X86_PCLMULQDQ_CRC"
+				},
+				{
+					"backtrace" : 19,
+					"define" : "X86_SSE2"
+				},
+				{
+					"backtrace" : 20,
+					"define" : "X86_SSE42"
+				},
+				{
+					"backtrace" : 21,
+					"define" : "X86_SSE42_CRC_INTRIN"
+				},
+				{
+					"backtrace" : 22,
+					"define" : "X86_SSSE3"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "X86_VPCLMULQDQ_CRC"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "ZLIB_COMPAT"
+				},
+				{
+					"backtrace" : 25,
+					"define" : "_CRT_NONSTDC_NO_DEPRECATE"
+				},
+				{
+					"backtrace" : 26,
+					"define" : "_CRT_SECURE_NO_DEPRECATE"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 27,
+					"path" : "C:/Users/user/CLionProjects/Phantom/Dependencies/cpr/cmake-build-release/_deps/zlib-build"
+				},
+				{
+					"backtrace" : 27,
+					"path" : "C:/Users/user/CLionProjects/Phantom/Dependencies/cpr/cmake-build-release/_deps/zlib-src"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				45
+			]
+		}
+	],
+	"id" : "zlib::@c9556b0b6bf47963f9da",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "C:/Program Files (x86)/cpr"
+		}
+	},
+	"name" : "zlib",
+	"nameOnDisk" : "zlibstatic.lib",
+	"paths" : 
+	{
+		"build" : "_deps/zlib-build",
+		"source" : "cmake-build-release/_deps/zlib-src"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				74,
+				75,
+				76
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				27,
+				28,
+				29,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/adler32.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/adler32_fold.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/chunkset.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/compare256.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/compress.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/cpu_features.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/crc32_braid.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/crc32_braid_comb.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/crc32_fold.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/deflate.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/deflate_fast.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/deflate_huff.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/deflate_medium.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/deflate_quick.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/deflate_rle.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/deflate_slow.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/deflate_stored.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/functable.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/infback.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/inflate.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/inftrees.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/insert_string.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/insert_string_roll.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/slide_hash.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/trees.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/uncompr.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/zutil.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/arch/x86/x86_features.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/fallback_builtins.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/arch/x86/adler32_avx512_p.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/arch/x86/x86_features.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 2,
+			"path" : "cmake-build-release/_deps/zlib-src/arch/x86/slide_hash_avx2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 2,
+			"path" : "cmake-build-release/_deps/zlib-src/arch/x86/chunkset_avx2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 2,
+			"path" : "cmake-build-release/_deps/zlib-src/arch/x86/compare256_avx2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 2,
+			"path" : "cmake-build-release/_deps/zlib-src/arch/x86/adler32_avx2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 3,
+			"path" : "cmake-build-release/_deps/zlib-src/arch/x86/adler32_avx512.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 3,
+			"path" : "cmake-build-release/_deps/zlib-src/arch/x86/adler32_avx512_vnni.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 4,
+			"path" : "cmake-build-release/_deps/zlib-src/arch/x86/adler32_sse42.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 4,
+			"path" : "cmake-build-release/_deps/zlib-src/arch/x86/insert_string_sse42.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/arch/x86/chunkset_sse2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/arch/x86/compare256_sse2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/arch/x86/slide_hash_sse2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 4,
+			"path" : "cmake-build-release/_deps/zlib-src/arch/x86/adler32_ssse3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 4,
+			"path" : "cmake-build-release/_deps/zlib-src/arch/x86/chunkset_ssse3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 5,
+			"path" : "cmake-build-release/_deps/zlib-src/arch/x86/crc32_pclmulqdq.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 6,
+			"path" : "cmake-build-release/_deps/zlib-src/arch/x86/crc32_vpclmulqdq.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-build/zconf.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-build/zlib_name_mangling.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-build/zlib.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/adler32_p.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/chunkset_tpl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/compare256_rle.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/cpu_features.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/crc32_braid_p.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/crc32_braid_comb_p.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/crc32_braid_tbl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/crc32_fold.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/deflate.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/deflate_p.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/functable.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/inffast_tpl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/inffixed_tbl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/inflate.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/inflate_p.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/inftrees.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/insert_string_tpl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/match_tpl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/trees.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/trees_emit.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/trees_tbl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/zbuild.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/zendian.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/zutil.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cmake-build-release/_deps/zlib-src/gzguts.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/gzlib.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-build/gzread.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/_deps/zlib-src/gzwrite.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

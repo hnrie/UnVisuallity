@@ -1,0 +1,689 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						3,
+						9,
+						10,
+						15,
+						17,
+						18
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						12
+					]
+				},
+				{
+					"build" : "dependencies/luau",
+					"childIndexes" : 
+					[
+						2
+					],
+					"jsonFile" : "directory-dependencies.luau-Release-25ce71bd9bdf06d17f28.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "dependencies/luau",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						19
+					]
+				},
+				{
+					"build" : "dependencies/luau/fuzz",
+					"jsonFile" : "directory-dependencies.luau.fuzz-Release-6982ead75690a278fe0e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "dependencies/luau/fuzz"
+				},
+				{
+					"build" : "dependencies/cpr",
+					"childIndexes" : 
+					[
+						4,
+						5,
+						7,
+						8
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-dependencies.cpr-Release-73c3fa1fc4b63ac47f2a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "dependencies/cpr"
+				},
+				{
+					"build" : "_deps/zlib-build",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.zlib-build-Release-15e00f86310ce47a4de4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.1"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 3,
+					"source" : "cmake-build-release/_deps/zlib-src",
+					"targetIndexes" : 
+					[
+						25
+					]
+				},
+				{
+					"build" : "_deps/curl-build",
+					"childIndexes" : 
+					[
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.curl-build-Release-ad7329d089517bd49a41.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 4,
+					"source" : "cmake-build-release/_deps/curl-src",
+					"targetIndexes" : 
+					[
+						17
+					]
+				},
+				{
+					"build" : "_deps/curl-build/lib",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.curl-build.lib-Release-bd876d030e2f22620152.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.7"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 4,
+					"source" : "cmake-build-release/_deps/curl-src/lib",
+					"targetIndexes" : 
+					[
+						18,
+						21,
+						22
+					]
+				},
+				{
+					"build" : "dependencies/cpr/cpr",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-dependencies.cpr.cpr-Release-1d5bb4dea16381956d0a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 2,
+					"source" : "dependencies/cpr/cpr",
+					"targetIndexes" : 
+					[
+						14
+					]
+				},
+				{
+					"build" : "dependencies/cpr/include",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-dependencies.cpr.include-Release-1975e709b0c75f16178e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 2,
+					"source" : "dependencies/cpr/include"
+				},
+				{
+					"build" : "dependencies/imgui",
+					"jsonFile" : "directory-dependencies.imgui-Release-30d58ee23d2202678095.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29.6"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 5,
+					"source" : "dependencies/imgui",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "dependencies/cryptopp",
+					"childIndexes" : 
+					[
+						11,
+						14
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-dependencies.cryptopp-Release-f9189144e9d88bc33925.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 6,
+					"source" : "dependencies/cryptopp"
+				},
+				{
+					"build" : "dependencies/cryptopp/test",
+					"childIndexes" : 
+					[
+						12,
+						13
+					],
+					"jsonFile" : "directory-dependencies.cryptopp.test-Release-b751f50a74e1a2861676.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 10,
+					"projectIndex" : 6,
+					"source" : "dependencies/cryptopp/test",
+					"targetIndexes" : 
+					[
+						24
+					]
+				},
+				{
+					"build" : "dependencies/cryptopp/test/unit",
+					"jsonFile" : "directory-dependencies.cryptopp.test.unit-Release-987356363a6eb22f9a59.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 6,
+					"source" : "dependencies/cryptopp/test/unit"
+				},
+				{
+					"build" : "dependencies/cryptopp/test/integration",
+					"jsonFile" : "directory-dependencies.cryptopp.test.integration-Release-41c0154fcc7e05f30e1e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 11,
+					"projectIndex" : 6,
+					"source" : "dependencies/cryptopp/test/integration"
+				},
+				{
+					"build" : "dependencies/cryptopp/cryptopp",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-dependencies.cryptopp.cryptopp-Release-1851af491e55fa7d7528.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 10,
+					"projectIndex" : 6,
+					"source" : "dependencies/cryptopp/cryptopp",
+					"targetIndexes" : 
+					[
+						15,
+						16
+					]
+				},
+				{
+					"build" : "dependencies/BLAKE3",
+					"childIndexes" : 
+					[
+						16
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-dependencies.BLAKE3-Release-f03b9bc299b7a45c8f0d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.9"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 7,
+					"source" : "dependencies/BLAKE3",
+					"targetIndexes" : 
+					[
+						13
+					]
+				},
+				{
+					"build" : "dependencies/BLAKE3/dependencies",
+					"jsonFile" : "directory-dependencies.BLAKE3.dependencies-Release-4bcf9d2fe6a3f03f56ba.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.9"
+					},
+					"parentIndex" : 15,
+					"projectIndex" : 7,
+					"source" : "dependencies/BLAKE3/dependencies"
+				},
+				{
+					"build" : "dependencies/IXWebSocket",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-dependencies.IXWebSocket-Release-05c2d06df309274af406.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 8,
+					"source" : "dependencies/IXWebSocket",
+					"targetIndexes" : 
+					[
+						20
+					]
+				},
+				{
+					"build" : "dependencies/lz4",
+					"jsonFile" : "directory-dependencies.lz4-Release-d4e0249ce2031bcc5a25.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 9,
+					"source" : "dependencies/lz4",
+					"targetIndexes" : 
+					[
+						23
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						5,
+						6,
+						7,
+						8,
+						9
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Visual",
+					"targetIndexes" : 
+					[
+						12
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2
+					],
+					"name" : "Luau",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						19
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						3,
+						4
+					],
+					"directoryIndexes" : 
+					[
+						3,
+						7,
+						8
+					],
+					"name" : "cpr",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						14
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "zlib",
+					"parentIndex" : 2,
+					"targetIndexes" : 
+					[
+						25
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5,
+						6
+					],
+					"name" : "CURL",
+					"parentIndex" : 2,
+					"targetIndexes" : 
+					[
+						17,
+						18,
+						21,
+						22
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						9
+					],
+					"name" : "Imgui",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						10,
+						11,
+						12,
+						13,
+						14
+					],
+					"name" : "cryptopp-cmake",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						15,
+						16,
+						24
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						15,
+						16
+					],
+					"name" : "libblake3",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						13
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						17
+					],
+					"name" : "ixwebsocket",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						20
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						18
+					],
+					"name" : "lz4",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						23
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 9,
+					"id" : "Imgui::@35cd20979e36b823e6e1",
+					"jsonFile" : "target-Imgui-Release-a6765499f14e8aaaddf7.json",
+					"name" : "Imgui",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Luau.Analysis::@7c3c045c5f9610b3f174",
+					"jsonFile" : "target-Luau.Analysis-Release-d75017116d0ea0ff2351.json",
+					"name" : "Luau.Analysis",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Luau.Ast::@7c3c045c5f9610b3f174",
+					"jsonFile" : "target-Luau.Ast-Release-90b81fed0b3e44edf739.json",
+					"name" : "Luau.Ast",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Luau.CLI.lib::@7c3c045c5f9610b3f174",
+					"jsonFile" : "target-Luau.CLI.lib-Release-fa9c99e0c85d0f69a313.json",
+					"name" : "Luau.CLI.lib",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Luau.CodeGen::@7c3c045c5f9610b3f174",
+					"jsonFile" : "target-Luau.CodeGen-Release-15983726c4c4c4dca255.json",
+					"name" : "Luau.CodeGen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Luau.Common::@7c3c045c5f9610b3f174",
+					"jsonFile" : "target-Luau.Common-Release-e9366c539a8677439c46.json",
+					"name" : "Luau.Common",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Luau.Compiler::@7c3c045c5f9610b3f174",
+					"jsonFile" : "target-Luau.Compiler-Release-7ae24ebbe8c81ba11f18.json",
+					"name" : "Luau.Compiler",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Luau.Config::@7c3c045c5f9610b3f174",
+					"jsonFile" : "target-Luau.Config-Release-2c5883b341183d680ce6.json",
+					"name" : "Luau.Config",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Luau.EqSat::@7c3c045c5f9610b3f174",
+					"jsonFile" : "target-Luau.EqSat-Release-72801f48369dad4f7bcf.json",
+					"name" : "Luau.EqSat",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Luau.Require::@7c3c045c5f9610b3f174",
+					"jsonFile" : "target-Luau.Require-Release-b10443293b1183e3c88d.json",
+					"name" : "Luau.Require",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Luau.RequireNavigator::@7c3c045c5f9610b3f174",
+					"jsonFile" : "target-Luau.RequireNavigator-Release-9d4cb2417830e340465f.json",
+					"name" : "Luau.RequireNavigator",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Luau.VM::@7c3c045c5f9610b3f174",
+					"jsonFile" : "target-Luau.VM-Release-8287b56367b3225f877e.json",
+					"name" : "Luau.VM",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Visual::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Visual-Release-23ea3ee199232e2510d5.json",
+					"name" : "Visual",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 15,
+					"id" : "blake3::@c9c36dfa87b37a5252b1",
+					"jsonFile" : "target-blake3-Release-c94ff5319c0fac397c7d.json",
+					"name" : "blake3",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "cpr::@34789e89680e08f6e904",
+					"jsonFile" : "target-cpr-Release-a444bccbeeddda0c2534.json",
+					"name" : "cpr",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 14,
+					"id" : "cryptest::@411636fc141f11a33494",
+					"jsonFile" : "target-cryptest-Release-aba1ad127f3e9f3e25ba.json",
+					"name" : "cryptest",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 14,
+					"id" : "cryptopp::@411636fc141f11a33494",
+					"jsonFile" : "target-cryptopp-Release-80cb88530cfadc6603c8.json",
+					"name" : "cryptopp",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "curl_uninstall::@b95861b2ba384b5171eb",
+					"jsonFile" : "target-curl_uninstall-Release-f8a7b3ef3232d1d0f258.json",
+					"name" : "curl_uninstall",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "curlu::@7349aeacaff41deceb36",
+					"jsonFile" : "target-curlu-Release-f9dd38a58bd623089de2.json",
+					"name" : "curlu",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "isocline::@7c3c045c5f9610b3f174",
+					"jsonFile" : "target-isocline-Release-fd464f1c2cf77d55886c.json",
+					"name" : "isocline",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 17,
+					"id" : "ixwebsocket::@7062a3f45b6ba0927f7e",
+					"jsonFile" : "target-ixwebsocket-Release-b0ebf3edccd0e8620045.json",
+					"name" : "ixwebsocket",
+					"projectIndex" : 8
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "libcurl_object::@7349aeacaff41deceb36",
+					"jsonFile" : "target-libcurl_object-Release-679c5b37dc5844306359.json",
+					"name" : "libcurl_object",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "libcurl_static::@7349aeacaff41deceb36",
+					"jsonFile" : "target-libcurl_static-Release-63c175bc5a9755f11632.json",
+					"name" : "libcurl_static",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 18,
+					"id" : "lz4::@22e51eab346cec75437e",
+					"jsonFile" : "target-lz4-Release-34b2e88e85dd3efc4610.json",
+					"name" : "lz4",
+					"projectIndex" : 9
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "test-verbose::@b386212b99561f9f2656",
+					"jsonFile" : "target-test-verbose-Release-89b09f8ee1390687531a.json",
+					"name" : "test-verbose",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "zlib::@c9556b0b6bf47963f9da",
+					"jsonFile" : "target-zlib-Release-d7b49a10a12954ab8607.json",
+					"name" : "zlib",
+					"projectIndex" : 3
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release",
+		"source" : "C:/Users/user/Documents/GitHub/visual-module"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

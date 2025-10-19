@@ -1,0 +1,258 @@
+{
+	"archive" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:x64",
+				"role" : "flags"
+			}
+		]
+	},
+	"artifacts" : 
+	[
+		{
+			"path" : "dependencies/luau/Luau.CLI.lib.lib"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"_add_library",
+			"add_library",
+			"target_link_libraries",
+			"add_compile_options",
+			"target_compile_options",
+			"target_include_directories",
+			"target_compile_features",
+			"target_sources",
+			"include"
+		],
+		"files" : 
+		[
+			"C:/Users/user/Downloads/vcpkg-2025.04.09/vcpkg-2025.04.09/scripts/buildsystems/vcpkg.cmake",
+			"dependencies/luau/CMakeLists.txt",
+			"CMakeLists.txt",
+			"dependencies/luau/Sources.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 26,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 639,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 74,
+				"parent" : 0
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 8,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 166,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 73,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 72,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 68,
+				"parent" : 0
+			},
+			{
+				"file" : 3,
+				"parent" : 9
+			},
+			{
+				"command" : 7,
+				"file" : 3,
+				"line" : 398,
+				"parent" : 10
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++latest -MD"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/cgthreads8"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/arch:AVX2"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "/D_CRT_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "/we4018"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "/we4388"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/dependencies/luau/CLI/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/dependencies/luau/Common/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/dependencies/luau/Config/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/dependencies/luau/Ast/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					8
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				3,
+				4,
+				5
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "Luau.Common::@7c3c045c5f9610b3f174"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "Luau.Config::@7c3c045c5f9610b3f174"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "Luau.Ast::@7c3c045c5f9610b3f174"
+		}
+	],
+	"id" : "Luau.CLI.lib::@7c3c045c5f9610b3f174",
+	"name" : "Luau.CLI.lib",
+	"nameOnDisk" : "Luau.CLI.lib.lib",
+	"paths" : 
+	{
+		"build" : "dependencies/luau",
+		"source" : "dependencies/luau"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				3,
+				4,
+				5
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CLI/include/Luau/FileUtils.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CLI/include/Luau/Flags.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CLI/include/Luau/VfsNavigator.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CLI/src/FileUtils.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CLI/src/Flags.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CLI/src/VfsNavigator.cpp",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

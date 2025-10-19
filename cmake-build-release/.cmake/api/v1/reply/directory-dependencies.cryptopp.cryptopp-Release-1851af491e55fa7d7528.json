@@ -1,0 +1,366 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"dependencies/cryptopp/cryptopp/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1553,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1565,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1577,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1586,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1593,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1601,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1602,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1606,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "cryptopp_dev",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"dependencies/cryptopp/cryptopp/cryptopp.lib"
+			],
+			"targetId" : "cryptopp::@411636fc141f11a33494",
+			"targetIndex" : 16,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "cryptopp_dev",
+			"destination" : "include/cryptopp",
+			"paths" : 
+			[
+				"cmake-build-release/dependencies/cryptopp/cryptopp/3way.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/adler32.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/adv_simd.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/aes.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/aes_armv4.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/algebra.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/algparam.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/allocate.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/arc4.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/argnames.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/aria.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/arm_simd.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/asn.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/authenc.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/base32.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/base64.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/basecode.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/blake2.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/blowfish.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/blumshub.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/camellia.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/cast.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/cbcmac.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/ccm.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/chacha.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/chachapoly.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/cham.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/channels.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/cmac.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/config.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/config_align.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/config_asm.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/config_cpu.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/config_cxx.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/config_dll.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/config_int.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/config_misc.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/config_ns.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/config_os.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/config_ver.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/cpu.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/crc.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/cryptlib.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/darn.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/default.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/des.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/dh.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/dh2.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/dll.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/dmac.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/donna.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/donna_32.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/donna_64.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/donna_sse.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/drbg.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/dsa.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/eax.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/ec2n.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/eccrypto.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/ecp.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/ecpoint.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/elgamal.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/emsa2.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/eprecomp.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/esign.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/fhmqv.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/files.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/filters.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/fips140.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/fltrimpl.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/gcm.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/gf256.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/gf2_32.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/gf2n.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/gfpcrypt.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/gost.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/gzip.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/hashfwd.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/hc128.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/hc256.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/hex.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/hight.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/hkdf.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/hmac.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/hmqv.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/hrtimer.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/ida.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/idea.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/integer.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/iterhash.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/kalyna.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/keccak.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/lea.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/lsh.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/lubyrack.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/luc.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/mars.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/md2.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/md4.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/md5.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/mdc.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/mersenne.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/misc.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/modarith.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/modes.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/modexppc.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/mqueue.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/mqv.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/naclite.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/nbtheory.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/nr.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/oaep.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/oids.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/osrng.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/ossig.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/padlkrng.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/panama.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/pch.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/pkcspad.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/poly1305.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/polynomi.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/ppc_simd.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/pssr.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/pubkey.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/pwdbased.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/queue.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/rabbit.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/rabin.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/randpool.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/rc2.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/rc5.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/rc6.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/rdrand.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/rijndael.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/ripemd.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/rng.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/rsa.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/rw.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/safer.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/salsa.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/scrypt.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/seal.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/secblock.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/secblockfwd.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/seckey.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/seed.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/serpent.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/serpentp.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/sha.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/sha1_armv4.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/sha256_armv4.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/sha3.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/sha512_armv4.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/shacal2.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/shake.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/shark.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/simeck.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/simon.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/simple.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/siphash.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/skipjack.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/sm3.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/sm4.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/smartptr.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/sosemanuk.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/speck.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/square.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/stdcpp.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/strciphr.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/tea.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/threefish.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/tiger.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/trap.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/trunhash.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/ttmac.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/tweetnacl.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/twofish.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/vmac.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/wake.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/whrlpool.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/words.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/xed25519.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/xtr.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/xtrcrypt.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/xts.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/zdeflate.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/zinflate.h",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/zlib.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "cryptopp_dev",
+			"destination" : "share/cmake/cryptopp",
+			"exportName" : "cryptopp_Targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "cryptopp::@411636fc141f11a33494",
+					"index" : 16
+				}
+			],
+			"paths" : 
+			[
+				"dependencies/cryptopp/cryptopp/CMakeFiles/Export/b2240bf58d48ab81379cb5dc4149e5db/cryptopp-static-targets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "cryptopp_dev",
+			"destination" : "share/cmake/cryptopp",
+			"paths" : 
+			[
+				"dependencies/cryptopp/cryptopp/cryptoppConfig.cmake",
+				"cmake-build-release/dependencies/cryptopp/cryptopp/cryptoppConfigVersion.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "cryptopp_dev",
+			"destination" : "share/pkgconfig",
+			"paths" : 
+			[
+				"cmake-build-release/dependencies/cryptopp/cryptopp/cryptopp.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"dependencies/cryptopp/cryptopp/cryptest.exe"
+			],
+			"targetId" : "cryptest::@411636fc141f11a33494",
+			"targetIndex" : 15,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "cryptest::@411636fc141f11a33494",
+				"index" : 15
+			},
+			"destination" : "bin",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 7,
+			"component" : "Unspecified",
+			"destination" : "share/cryptopp",
+			"paths" : 
+			[
+				"cmake-build-release/dependencies/cryptopp/cryptopp/TestData"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "Unspecified",
+			"destination" : "share/cryptopp",
+			"paths" : 
+			[
+				"cmake-build-release/dependencies/cryptopp/cryptopp/TestVectors"
+			],
+			"type" : "directory"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "dependencies/cryptopp/cryptopp",
+		"source" : "dependencies/cryptopp/cryptopp"
+	}
+}

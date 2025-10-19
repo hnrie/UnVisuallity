@@ -1,0 +1,1246 @@
+{
+	"archive" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:x64",
+				"role" : "flags"
+			}
+		]
+	},
+	"artifacts" : 
+	[
+		{
+			"path" : "dependencies/luau/Luau.Analysis.lib"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"_add_library",
+			"add_library",
+			"target_link_libraries",
+			"add_compile_options",
+			"target_compile_options",
+			"target_include_directories",
+			"target_compile_features",
+			"target_sources",
+			"include"
+		],
+		"files" : 
+		[
+			"C:/Users/user/Downloads/vcpkg-2025.04.09/vcpkg-2025.04.09/scripts/buildsystems/vcpkg.cmake",
+			"dependencies/luau/CMakeLists.txt",
+			"CMakeLists.txt",
+			"dependencies/luau/Sources.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 639,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 90,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 91,
+				"parent" : 0
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 8,
+				"parent" : 5
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 164,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 89,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 88,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 68,
+				"parent" : 0
+			},
+			{
+				"file" : 3,
+				"parent" : 10
+			},
+			{
+				"command" : 7,
+				"file" : 3,
+				"line" : 170,
+				"parent" : 11
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++latest -MD"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "/cgthreads8"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "/arch:AVX2"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/D_CRT_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/we4018"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/we4388"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/dependencies/luau/Analysis/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/dependencies/luau/Ast/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/dependencies/luau/Common/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/dependencies/luau/EqSat/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/dependencies/luau/Config/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/dependencies/luau/Compiler/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/dependencies/luau/VM/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					9
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "Luau.Common::@7c3c045c5f9610b3f174"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "Luau.Config::@7c3c045c5f9610b3f174"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "Luau.EqSat::@7c3c045c5f9610b3f174"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "Luau.VM::@7c3c045c5f9610b3f174"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "Luau.Ast::@7c3c045c5f9610b3f174"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "Luau.Compiler::@7c3c045c5f9610b3f174"
+		}
+	],
+	"id" : "Luau.Analysis::@7c3c045c5f9610b3f174",
+	"name" : "Luau.Analysis",
+	"nameOnDisk" : "Luau.Analysis.lib",
+	"paths" : 
+	{
+		"build" : "dependencies/luau",
+		"source" : "dependencies/luau"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Anyification.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/ApplyTypeFunction.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/AstJsonEncoder.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/AstQuery.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Autocomplete.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/AutocompleteTypes.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/BuiltinDefinitions.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Cancellation.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Clone.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Constraint.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/ConstraintGenerator.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/ConstraintSet.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/ConstraintSolver.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/ControlFlow.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/DataFlowGraph.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/DcrLogger.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Def.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Differ.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Documentation.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Error.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/EqSatSimplification.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/FileResolver.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/FragmentAutocomplete.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Frontend.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Generalization.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/GlobalTypes.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/InferPolarity.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/InsertionOrderedMap.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Instantiation.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Instantiation2.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/IostreamHelpers.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/JsonEmitter.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Linter.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/LValue.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Metamethods.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Module.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/ModuleResolver.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/NonStrictTypeChecker.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Normalize.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/OverloadResolution.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Polarity.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Predicate.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Quantify.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/RecursionCounter.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Refinement.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/RequireTracer.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Scope.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Set.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Simplify.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Substitution.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Subtyping.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Symbol.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/TableLiteralInference.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/ToDot.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/TopoSortStatements.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/ToString.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Transpiler.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/TxnLog.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Type.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/TypeArena.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/TypeAttach.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/TypeChecker2.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/TypeCheckLimits.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/TypedAllocator.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/TypeFunction.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/TypeFunctionReductionGuesser.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/TypeFunctionRuntime.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/TypeFunctionRuntimeBuilder.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/TypeFwd.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/TypeInfer.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/TypeOrPack.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/TypePack.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/TypePairHash.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/TypePath.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/TypeUtils.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Unifiable.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Unifier.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/Unifier2.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/UnifierSharedState.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"path" : "dependencies/luau/Analysis/include/Luau/VisitType.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/Anyification.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/ApplyTypeFunction.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/AstJsonEncoder.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/AstQuery.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/Autocomplete.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/AutocompleteCore.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/BuiltinDefinitions.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/Clone.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/Constraint.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/ConstraintGenerator.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/ConstraintSolver.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/DataFlowGraph.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/DcrLogger.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/Def.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/Differ.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/EmbeddedBuiltinDefinitions.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/Error.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/EqSatSimplification.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/FileResolver.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/FragmentAutocomplete.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/Frontend.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/Generalization.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/GlobalTypes.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/InferPolarity.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/Instantiation.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/Instantiation2.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/IostreamHelpers.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/JsonEmitter.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/Linter.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/LValue.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/Module.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/NonStrictTypeChecker.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/Normalize.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/OverloadResolution.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/Quantify.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/Refinement.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/RequireTracer.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/Scope.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/Simplify.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/Substitution.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/Subtyping.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/Symbol.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/TableLiteralInference.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/ToDot.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/TopoSortStatements.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/ToString.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/Transpiler.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/TxnLog.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/Type.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/TypeArena.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/TypeAttach.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/TypeChecker2.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/TypedAllocator.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/TypeFunction.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/TypeFunctionReductionGuesser.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/TypeFunctionRuntime.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/TypeFunctionRuntimeBuilder.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/TypeInfer.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/TypeOrPack.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/TypePack.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/TypePath.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/TypeUtils.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/Unifiable.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/Unifier.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/Analysis/src/Unifier2.cpp",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

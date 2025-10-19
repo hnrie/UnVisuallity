@@ -1,0 +1,1822 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "dependencies/cryptopp/cryptopp/cryptest.exe"
+		},
+		{
+			"path" : "dependencies/cryptopp/cryptopp/cryptest.pdb"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"_add_executable",
+			"add_executable",
+			"install",
+			"target_link_libraries",
+			"add_compile_options",
+			"set_property",
+			"cryptopp_set_compile_properties"
+		],
+		"files" : 
+		[
+			"C:/Users/user/Downloads/vcpkg-2025.04.09/vcpkg-2025.04.09/scripts/buildsystems/vcpkg.cmake",
+			"dependencies/cryptopp/cryptopp/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1454,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 598,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 1601,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 1455,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 1428,
+				"parent" : 0
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 8,
+				"parent" : 6
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 1343,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1329,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1457,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1334,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1329,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1334,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1329,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1334,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1329,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1334,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1329,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1334,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1329,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1334,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1329,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1334,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1329,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1334,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1329,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1334,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1329,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1334,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1329,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1334,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1329,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1334,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1329,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1334,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1329,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1334,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1329,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1334,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1329,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1334,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1329,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1334,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1329,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1334,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1329,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1334,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1329,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1334,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1329,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1334,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1329,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1334,
+				"parent" : 8
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++latest -MD"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/cgthreads8"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/arch:AVX2"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "/FIwinapifamily.h /GR /MP"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 10,
+					"define" : "CRYPTOPP_DATA_DIR=\"C:/Program Files (x86)/Visual/share/cryptopp/\""
+				},
+				{
+					"backtrace" : 11,
+					"define" : "_WIN32_WINNT=0x0A00"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp/cryptopp"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++latest -MD"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/cgthreads8"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/arch:AVX2"
+				},
+				{
+					"backtrace" : 12,
+					"fragment" : "/FIwinapifamily.h /GR /MP"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 13,
+					"define" : "_WIN32_WINNT=0x0A00"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp/cryptopp"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				1
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++latest -MD"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/cgthreads8"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/arch:AVX2"
+				},
+				{
+					"backtrace" : 14,
+					"fragment" : "/FIwinapifamily.h /GR /MP"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 15,
+					"define" : "_WIN32_WINNT=0x0A00"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp/cryptopp"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				2
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++latest -MD"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/cgthreads8"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/arch:AVX2"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "/FIwinapifamily.h /GR /MP"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 10,
+					"define" : "CRYPTOPP_DATA_DIR=\"C:/Program Files (x86)/Visual/share/cryptopp/\""
+				},
+				{
+					"backtrace" : 17,
+					"define" : "_WIN32_WINNT=0x0A00"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp/cryptopp"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				3
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++latest -MD"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/cgthreads8"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/arch:AVX2"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "/FIwinapifamily.h /GR /MP"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 10,
+					"define" : "CRYPTOPP_DATA_DIR=\"C:/Program Files (x86)/Visual/share/cryptopp/\""
+				},
+				{
+					"backtrace" : 19,
+					"define" : "_WIN32_WINNT=0x0A00"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp/cryptopp"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				4
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++latest -MD"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/cgthreads8"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/arch:AVX2"
+				},
+				{
+					"backtrace" : 20,
+					"fragment" : "/FIwinapifamily.h /GR /MP"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 21,
+					"define" : "_WIN32_WINNT=0x0A00"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp/cryptopp"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				5
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++latest -MD"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/cgthreads8"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/arch:AVX2"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "/FIwinapifamily.h /GR /MP"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 23,
+					"define" : "_WIN32_WINNT=0x0A00"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp/cryptopp"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				6
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++latest -MD"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/cgthreads8"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/arch:AVX2"
+				},
+				{
+					"backtrace" : 24,
+					"fragment" : "/FIwinapifamily.h /GR /MP"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 10,
+					"define" : "CRYPTOPP_DATA_DIR=\"C:/Program Files (x86)/Visual/share/cryptopp/\""
+				},
+				{
+					"backtrace" : 25,
+					"define" : "_WIN32_WINNT=0x0A00"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp/cryptopp"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				7
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++latest -MD"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/cgthreads8"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/arch:AVX2"
+				},
+				{
+					"backtrace" : 26,
+					"fragment" : "/FIwinapifamily.h /GR /MP"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 27,
+					"define" : "_WIN32_WINNT=0x0A00"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp/cryptopp"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				8
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++latest -MD"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/cgthreads8"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/arch:AVX2"
+				},
+				{
+					"backtrace" : 28,
+					"fragment" : "/FIwinapifamily.h /GR /MP"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 29,
+					"define" : "_WIN32_WINNT=0x0A00"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp/cryptopp"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				9
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++latest -MD"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/cgthreads8"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/arch:AVX2"
+				},
+				{
+					"backtrace" : 30,
+					"fragment" : "/FIwinapifamily.h /GR /MP"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 31,
+					"define" : "_WIN32_WINNT=0x0A00"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp/cryptopp"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				10
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++latest -MD"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/cgthreads8"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/arch:AVX2"
+				},
+				{
+					"backtrace" : 32,
+					"fragment" : "/FIwinapifamily.h /GR /MP"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 10,
+					"define" : "CRYPTOPP_DATA_DIR=\"C:/Program Files (x86)/Visual/share/cryptopp/\""
+				},
+				{
+					"backtrace" : 33,
+					"define" : "_WIN32_WINNT=0x0A00"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp/cryptopp"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				11
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++latest -MD"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/cgthreads8"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/arch:AVX2"
+				},
+				{
+					"backtrace" : 34,
+					"fragment" : "/FIwinapifamily.h /GR /MP"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 35,
+					"define" : "_WIN32_WINNT=0x0A00"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp/cryptopp"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				12
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++latest -MD"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/cgthreads8"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/arch:AVX2"
+				},
+				{
+					"backtrace" : 36,
+					"fragment" : "/FIwinapifamily.h /GR /MP"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 37,
+					"define" : "_WIN32_WINNT=0x0A00"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp/cryptopp"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				13
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++latest -MD"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/cgthreads8"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/arch:AVX2"
+				},
+				{
+					"backtrace" : 38,
+					"fragment" : "/FIwinapifamily.h /GR /MP"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 10,
+					"define" : "CRYPTOPP_DATA_DIR=\"C:/Program Files (x86)/Visual/share/cryptopp/\""
+				},
+				{
+					"backtrace" : 39,
+					"define" : "_WIN32_WINNT=0x0A00"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp/cryptopp"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				14
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++latest -MD"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/cgthreads8"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/arch:AVX2"
+				},
+				{
+					"backtrace" : 40,
+					"fragment" : "/FIwinapifamily.h /GR /MP"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 10,
+					"define" : "CRYPTOPP_DATA_DIR=\"C:/Program Files (x86)/Visual/share/cryptopp/\""
+				},
+				{
+					"backtrace" : 41,
+					"define" : "_WIN32_WINNT=0x0A00"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp/cryptopp"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				15
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++latest -MD"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/cgthreads8"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/arch:AVX2"
+				},
+				{
+					"backtrace" : 42,
+					"fragment" : "/FIwinapifamily.h /GR /MP"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 10,
+					"define" : "CRYPTOPP_DATA_DIR=\"C:/Program Files (x86)/Visual/share/cryptopp/\""
+				},
+				{
+					"backtrace" : 43,
+					"define" : "_WIN32_WINNT=0x0A00"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp/cryptopp"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				16
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++latest -MD"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/cgthreads8"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/arch:AVX2"
+				},
+				{
+					"backtrace" : 44,
+					"fragment" : "/FIwinapifamily.h /GR /MP"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 45,
+					"define" : "_WIN32_WINNT=0x0A00"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp/cryptopp"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				17
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++latest -MD"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/cgthreads8"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/arch:AVX2"
+				},
+				{
+					"backtrace" : 46,
+					"fragment" : "/FIwinapifamily.h /GR /MP"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 47,
+					"define" : "_WIN32_WINNT=0x0A00"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp/cryptopp"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				18
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++latest -MD"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/cgthreads8"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/arch:AVX2"
+				},
+				{
+					"backtrace" : 48,
+					"fragment" : "/FIwinapifamily.h /GR /MP"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 49,
+					"define" : "_WIN32_WINNT=0x0A00"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp/cryptopp"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				19
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++latest -MD"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/cgthreads8"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/arch:AVX2"
+				},
+				{
+					"backtrace" : 50,
+					"fragment" : "/FIwinapifamily.h /GR /MP"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 51,
+					"define" : "_WIN32_WINNT=0x0A00"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp/cryptopp"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				20
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++latest -MD"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/cgthreads8"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/arch:AVX2"
+				},
+				{
+					"backtrace" : 52,
+					"fragment" : "/FIwinapifamily.h /GR /MP"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 53,
+					"define" : "_WIN32_WINNT=0x0A00"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp/cryptopp"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/cmake-build-release/dependencies/cryptopp"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				21
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "cryptopp::@411636fc141f11a33494"
+		}
+	],
+	"id" : "cryptest::@411636fc141f11a33494",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 3,
+				"path" : "bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "C:/Program Files (x86)/Visual"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MD",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 /INCREMENTAL:NO /subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "dependencies\\cryptopp\\cryptopp\\cryptopp.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "kernel32.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "cryptest",
+	"nameOnDisk" : "cryptest.exe",
+	"paths" : 
+	{
+		"build" : "dependencies/cryptopp/cryptopp",
+		"source" : "dependencies/cryptopp/cryptopp"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "cmake-build-release/dependencies/cryptopp/cryptopp/test.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "cmake-build-release/dependencies/cryptopp/cryptopp/bench1.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 2,
+			"path" : "cmake-build-release/dependencies/cryptopp/cryptopp/bench2.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 3,
+			"path" : "cmake-build-release/dependencies/cryptopp/cryptopp/bench3.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 4,
+			"path" : "cmake-build-release/dependencies/cryptopp/cryptopp/datatest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 5,
+			"path" : "cmake-build-release/dependencies/cryptopp/cryptopp/dlltest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 6,
+			"path" : "cmake-build-release/dependencies/cryptopp/cryptopp/fipsalgt.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 7,
+			"path" : "cmake-build-release/dependencies/cryptopp/cryptopp/validat0.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 8,
+			"path" : "cmake-build-release/dependencies/cryptopp/cryptopp/validat1.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 9,
+			"path" : "cmake-build-release/dependencies/cryptopp/cryptopp/validat2.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 10,
+			"path" : "cmake-build-release/dependencies/cryptopp/cryptopp/validat3.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 11,
+			"path" : "cmake-build-release/dependencies/cryptopp/cryptopp/validat4.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 12,
+			"path" : "cmake-build-release/dependencies/cryptopp/cryptopp/validat5.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 13,
+			"path" : "cmake-build-release/dependencies/cryptopp/cryptopp/validat6.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 14,
+			"path" : "cmake-build-release/dependencies/cryptopp/cryptopp/validat7.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 15,
+			"path" : "cmake-build-release/dependencies/cryptopp/cryptopp/validat8.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 16,
+			"path" : "cmake-build-release/dependencies/cryptopp/cryptopp/validat9.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 17,
+			"path" : "cmake-build-release/dependencies/cryptopp/cryptopp/validat10.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 18,
+			"path" : "cmake-build-release/dependencies/cryptopp/cryptopp/regtest1.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 19,
+			"path" : "cmake-build-release/dependencies/cryptopp/cryptopp/regtest2.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 20,
+			"path" : "cmake-build-release/dependencies/cryptopp/cryptopp/regtest3.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 21,
+			"path" : "cmake-build-release/dependencies/cryptopp/cryptopp/regtest4.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

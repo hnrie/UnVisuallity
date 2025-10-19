@@ -1,0 +1,818 @@
+{
+	"archive" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:x64",
+				"role" : "flags"
+			}
+		]
+	},
+	"artifacts" : 
+	[
+		{
+			"path" : "dependencies/luau/Luau.CodeGen.lib"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"_add_library",
+			"add_library",
+			"target_link_libraries",
+			"add_compile_options",
+			"target_compile_options",
+			"target_include_directories",
+			"target_compile_features",
+			"target_sources",
+			"include"
+		],
+		"files" : 
+		[
+			"C:/Users/user/Downloads/vcpkg-2025.04.09/vcpkg-2025.04.09/scripts/buildsystems/vcpkg.cmake",
+			"dependencies/luau/CMakeLists.txt",
+			"CMakeLists.txt",
+			"dependencies/luau/Sources.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 32,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 639,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 99,
+				"parent" : 0
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 8,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 167,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 98,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 1,
+				"line" : 97,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 1,
+				"line" : 68,
+				"parent" : 0
+			},
+			{
+				"file" : 3,
+				"parent" : 9
+			},
+			{
+				"command" : 7,
+				"file" : 3,
+				"line" : 75,
+				"parent" : 10
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++latest -MD"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/cgthreads8"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/arch:AVX2"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "/D_CRT_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "/we4018"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "/we4388"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/dependencies/luau/CodeGen/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/dependencies/luau/VM/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/dependencies/luau/Common/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/user/Documents/GitHub/visual-module/dependencies/luau/VM/src"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					8
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "Luau.Common::@7c3c045c5f9610b3f174"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "Luau.VM::@7c3c045c5f9610b3f174"
+		}
+	],
+	"id" : "Luau.CodeGen::@7c3c045c5f9610b3f174",
+	"name" : "Luau.CodeGen",
+	"nameOnDisk" : "Luau.CodeGen.lib",
+	"paths" : 
+	{
+		"build" : "dependencies/luau",
+		"source" : "dependencies/luau"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/AddressA64.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/AssemblyBuilderA64.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/AssemblyBuilderX64.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/CodeAllocator.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/CodeBlockUnwind.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/CodeGen.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/CodeGenCommon.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/CodeGenOptions.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/ConditionA64.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/ConditionX64.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/IrAnalysis.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/IrBuilder.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/IrCallWrapperX64.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/IrDump.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/IrData.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/IrRegAllocX64.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/IrUtils.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/IrVisitUseDef.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/Label.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/LoweringStats.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/NativeProtoExecData.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/OperandX64.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/OptimizeConstProp.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/OptimizeDeadStore.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/OptimizeFinalX64.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/RegisterA64.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/RegisterX64.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/SharedCodeAllocator.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/UnwindBuilder.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/UnwindBuilderDwarf2.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/UnwindBuilderWin.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/BytecodeAnalysis.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/Luau/BytecodeSummary.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/include/luacodegen.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/AssemblyBuilderA64.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/AssemblyBuilderX64.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/CodeAllocator.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/CodeBlockUnwind.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/CodeGen.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/CodeGenAssembly.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/CodeGenContext.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/CodeGenUtils.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/CodeGenA64.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/CodeGenX64.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/EmitBuiltinsX64.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/EmitCommonX64.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/EmitInstructionX64.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/IrAnalysis.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/IrBuilder.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/IrCallWrapperX64.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/IrDump.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/IrLoweringA64.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/IrLoweringX64.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/IrRegAllocA64.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/IrRegAllocX64.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/IrTranslateBuiltins.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/IrTranslation.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/IrUtils.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/IrValueLocationTracking.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/lcodegen.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/NativeProtoExecData.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/NativeState.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/OptimizeConstProp.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/OptimizeDeadStore.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/OptimizeFinalX64.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/UnwindBuilderDwarf2.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/UnwindBuilderWin.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/BytecodeAnalysis.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/BytecodeSummary.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"compileGroupIndex" : 0,
+			"path" : "dependencies/luau/CodeGen/src/SharedCodeAllocator.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/src/BitUtils.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/src/ByteUtils.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/src/CodeGenContext.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/src/CodeGenLower.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/src/CodeGenUtils.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/src/CodeGenA64.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/src/CodeGenX64.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/src/EmitBuiltinsX64.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/src/EmitCommon.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/src/EmitCommonA64.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/src/EmitCommonX64.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/src/EmitInstructionX64.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/src/IrLoweringA64.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/src/IrLoweringX64.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/src/IrRegAllocA64.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/src/IrTranslateBuiltins.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/src/IrTranslation.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/src/IrValueLocationTracking.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 11,
+			"path" : "dependencies/luau/CodeGen/src/NativeState.h",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

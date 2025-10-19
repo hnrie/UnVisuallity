@@ -1,0 +1,161 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"dependencies/IXWebSocket/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 289,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 296,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 300,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 302,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"dependencies/IXWebSocket/ixwebsocket.lib"
+			],
+			"targetId" : "ixwebsocket::@7062a3f45b6ba0927f7e",
+			"targetIndex" : 20,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/ixwebsocket",
+			"paths" : 
+			[
+				"dependencies/IXWebSocket/ixwebsocket/IXBase64.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXBench.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXCancellationRequest.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXConnectionState.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXDNSLookup.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXExponentialBackoff.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXGetFreePort.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXGzipCodec.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXHttp.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXHttpClient.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXHttpServer.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXNetSystem.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXProgressCallback.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXSelectInterrupt.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXSelectInterruptFactory.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXSelectInterruptPipe.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXSelectInterruptEvent.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXSetThreadName.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXSocket.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXSocketConnect.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXSocketFactory.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXSocketServer.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXSocketTLSOptions.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXStrCaseCompare.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXUdpSocket.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXUniquePtr.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXUrlParser.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXUuid.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXUtf8Validator.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXUserAgent.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXWebSocket.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXWebSocketCloseConstants.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXWebSocketCloseInfo.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXWebSocketErrorInfo.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXWebSocketHandshake.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXWebSocketHandshakeKeyGen.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXWebSocketHttpHeaders.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXWebSocketInitResult.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXWebSocketMessage.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXWebSocketMessageType.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXWebSocketOpenInfo.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXWebSocketPerMessageDeflate.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXWebSocketPerMessageDeflateCodec.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXWebSocketPerMessageDeflateOptions.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXWebSocketProxyServer.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXWebSocketSendData.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXWebSocketSendInfo.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXWebSocketServer.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXWebSocketTransport.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXWebSocketVersion.h",
+				"dependencies/IXWebSocket/ixwebsocket/IXSocketMbedTLS.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/ixwebsocket",
+			"paths" : 
+			[
+				"cmake-build-release/dependencies/IXWebSocket/ixwebsocket-config.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"cmake-build-release/dependencies/IXWebSocket/ixwebsocket.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/ixwebsocket",
+			"exportName" : "ixwebsocket",
+			"exportTargets" : 
+			[
+				{
+					"id" : "ixwebsocket::@7062a3f45b6ba0927f7e",
+					"index" : 20
+				}
+			],
+			"paths" : 
+			[
+				"dependencies/IXWebSocket/CMakeFiles/Export/dbc99e06a99e696141dafd40631f8060/ixwebsocket-targets.cmake"
+			],
+			"type" : "export"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "dependencies/IXWebSocket",
+		"source" : "dependencies/IXWebSocket"
+	}
+}
