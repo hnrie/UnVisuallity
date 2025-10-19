@@ -7,7 +7,9 @@
 #include <string_view>
 #include <cstdint>
 #include <string>
+#ifdef _WIN32
 #include <Windows.h>
+#endif
 #include <cmath>
 
 #define LUAVM_SHUFFLE_COMMA ,

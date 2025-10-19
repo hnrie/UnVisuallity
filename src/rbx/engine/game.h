@@ -7,7 +7,11 @@
 
 template <typename T>
 inline T rebase(const uintptr_t rva) {
+#ifdef _WIN32
     return rva != NULL ? (T)(rva + reinterpret_cast<uintptr_t>(GetModuleHandleA(nullptr))) : static_cast<T>((NULL));
+#else
+    return (T)rva;
+#endif
 };
 
 namespace rbx {

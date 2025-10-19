@@ -455,4 +455,4 @@ FodyWeavers.xsd
 # End of https://www.toptal.com/developers/gitignore/api/c++,cmake,visualstudio
 
 cmake-build-release-visual-studio/
-.idea/editor.xml
+.idea/editor.xmlbuild/

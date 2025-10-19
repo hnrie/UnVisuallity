@@ -30,7 +30,7 @@ endif()
 # option(USE_ZLIB "Enable zlib support" OFF)
 set(USE_ZLIB ON)
 set(USE_TLS ON)
-set(USE_MBED_TLS ON)
+set(USE_MBED_TLS OFF)
 
 set( IXWEBSOCKET_SOURCES
         ixwebsocket/IXBench.cpp

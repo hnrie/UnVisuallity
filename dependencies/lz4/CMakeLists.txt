@@ -1,15 +1,17 @@
-cmake_minimum_required(VERSION 3.29)
+cmake_minimum_required(VERSION 3.28)
 project(lz4)
 
 set(CMAKE_CXX_STANDARD 23)
 
 # disable and enable shi for performance :P
-add_compile_options(
-        #/MT # not supported by our mapper atm... :(
-        /MP
-        /cgthreads8
-        /arch:AVX2
-)
+if(MSVC)
+    add_compile_options(
+            #/MT # not supported by our mapper atm... :(
+            /MP
+            /cgthreads8
+            /arch:AVX2
+    )
+endif()
 
 add_library(${PROJECT_NAME} STATIC lz4.c
 	lz4.h
