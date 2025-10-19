@@ -7,7 +7,11 @@
 
 template <typename T>
 inline T rebase(const uintptr_t rva) {
+#ifdef _WIN32
     return rva != NULL ? (T)(rva + reinterpret_cast<uintptr_t>(GetModuleHandleA(nullptr))) : static_cast<T>((NULL));
+#else
+    return (T)rva;
+#endif
 };
 
 namespace rbx {
@@ -94,6 +98,12 @@ namespace rbx {
             inline const uintptr_t vm_load = 0x1366360; // updated
         }
 
+    }
+
+    namespace job_names {
+        inline constexpr const char* waiting_hybrid_scripts_job = "WaitingHybridScriptsJob";
+        inline constexpr const char* lua_app = "LuaApp";
+        inline constexpr const char* ugc = "Ugc";
     }
 
     namespace offsets {

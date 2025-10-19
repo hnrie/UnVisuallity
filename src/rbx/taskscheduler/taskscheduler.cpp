@@ -75,7 +75,7 @@ uintptr_t taskscheduler::get_script_context() {
      while (jobstart != jobend) {
          std::string job_name = *(std::string*)(*(uintptr_t*)(jobstart)+rbx::offsets::taskscheduler::job_name);
 
-         if (*(std::string*)(*(uintptr_t*)(jobstart)+rbx::offsets::taskscheduler::job_name) == OBF("WaitingHybridScriptsJob")) {
+         if (*(std::string*)(*(uintptr_t*)(jobstart)+rbx::offsets::taskscheduler::job_name) == OBF(rbx::job_names::waiting_hybrid_scripts_job)) {
 
              // We do this so we won't get the Homepage WaitingHybridScriptsJob :P
              uintptr_t job = *(uintptr_t*)jobstart;
@@ -84,7 +84,7 @@ uintptr_t taskscheduler::get_script_context() {
              uintptr_t datamodel_name = *(uintptr_t*)(datamodel + rbx::offsets::instance::name);
              std::string datamodel_name_t = *(std::string*)(datamodel_name);
 
-             if (datamodel_name_t != OBF("LuaApp")) {
+             if (datamodel_name_t != OBF(rbx::job_names::lua_app)) {
                  luagc = *reinterpret_cast<uintptr_t*>(jobstart);
                  break;
              }
@@ -105,6 +105,8 @@ uintptr_t taskscheduler::get_script_context() {
 
 lua_State* taskscheduler::get_roblox_state() {
     uintptr_t script_context = get_script_context();
+    if (!script_context)
+        return nullptr;
 
     *reinterpret_cast<BOOLEAN*>(script_context + rbx::offsets::script_context::require_check) = TRUE;
 
@@ -192,7 +194,7 @@ void taskscheduler::initialize_hook() {
             uintptr_t datamodel_name = *(uintptr_t*)(datamodel + rbx::offsets::instance::name);
             std::string datamodel_name_t = *(std::string*)(datamodel_name);
 
-            if (datamodel_name_t == OBF("Ugc")) {
+             if (datamodel_name_t == OBF(rbx::job_names::ugc)) {
                 waiting_hybrid_scripts_job = *reinterpret_cast<uintptr_t*>(jobstart);
                 break;
             }
@@ -203,14 +205,15 @@ void taskscheduler::initialize_hook() {
     if (!waiting_hybrid_scripts_job)
         LI_FN(MessageBoxA).safe()(nullptr, OBF("Failed to synchronize"), OBF("Visual"), MB_OK);
 
-#define SCHEDULER_HOOK_INDEX 6
-#define VFTABLE_HOOK_SIZE 55
+    // This is a fragile way to hook the scheduler. If the VTable changes, this will break.
+    constexpr int SCHEDULER_HOOK_INDEX = 6;
+    constexpr int VFTABLE_HOOK_SIZE = 55;
 
     if (waiting_hybrid_scripts_job) {
-        void **_vtable = new void*[56];
-        memcpy(_vtable, *reinterpret_cast<void**>(waiting_hybrid_scripts_job), sizeof(uintptr_t) * 55);
-        original_step = reinterpret_cast<vt_function_t>(_vtable[6]);
-        _vtable[6] = scheduler_hook_1;
+        void **_vtable = new void*[VFTABLE_HOOK_SIZE + 1];
+        memcpy(_vtable, *reinterpret_cast<void**>(waiting_hybrid_scripts_job), sizeof(uintptr_t) * VFTABLE_HOOK_SIZE);
+        original_step = reinterpret_cast<vt_function_t>(_vtable[SCHEDULER_HOOK_INDEX]);
+        _vtable[SCHEDULER_HOOK_INDEX] = scheduler_hook_1;
         *reinterpret_cast< void** >(waiting_hybrid_scripts_job) = _vtable;
     }
 

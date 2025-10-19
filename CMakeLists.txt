@@ -1,16 +1,18 @@
-cmake_minimum_required(VERSION 3.29)
+cmake_minimum_required(VERSION 3.28)
 project(Visual)
 
 set(BUILD_SHARED_LIBS OFF)
 set(CMAKE_CXX_STANDARD 23)
 
 # disable and enable shi for performance :P
-add_compile_options(
-        #/MT # not supported by our mapper atm... :(
-        /MP
-        /cgthreads8
-        /arch:AVX2
-)
+if(MSVC)
+    add_compile_options(
+            #/MT # not supported by our mapper atm... :(
+            /MP
+            /cgthreads8
+            /arch:AVX2
+    )
+endif()
 
 add_library(${PROJECT_NAME} SHARED entry.cpp
         src/core/execution/execution.cpp
@@ -80,15 +82,15 @@ add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/dependencies/imgui")
 target_link_libraries(${PROJECT_NAME} PUBLIC Imgui)
 
 # cryptopp
-add_subdirectory("Dependencies/cryptopp")
+add_subdirectory("dependencies/cryptopp")
 target_link_libraries(${PROJECT_NAME} PUBLIC cryptopp::cryptopp)
 
 # BLAKE3
-add_subdirectory("Dependencies/BLAKE3")
+add_subdirectory("dependencies/BLAKE3")
 target_link_libraries(${PROJECT_NAME} PUBLIC blake3)
 
 # IXWebsocket
-add_subdirectory("Dependencies/ixwebsocket")
+add_subdirectory("dependencies/IXWebSocket")
 target_link_libraries(${PROJECT_NAME} PUBLIC ixwebsocket::ixwebsocket)
 
 
