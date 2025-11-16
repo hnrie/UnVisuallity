@@ -4,6 +4,8 @@
 
 #include "taskscheduler.h"
 
+#ifdef _WIN32
+
 #include <mutex>
 #include <regex>
 
@@ -230,3 +232,35 @@ void taskscheduler::queue_yield(const std::function<void()>& callback) {
 
     yielding_requests.emplace(callback);
 }
+
+#else
+
+uintptr_t taskscheduler::get_job_by_name(std::string) {
+    return 0;
+}
+
+uintptr_t taskscheduler::get_script_context() {
+    return 0;
+}
+
+lua_State* taskscheduler::get_roblox_state() {
+    return nullptr;
+}
+
+void taskscheduler::set_fps(double) {}
+
+double taskscheduler::get_fps() {
+    return 0.0;
+}
+
+int taskscheduler::scheduler_hook() {
+    return 0;
+}
+
+void taskscheduler::initialize_hook() {}
+
+void taskscheduler::queue_script(const std::string&) {}
+
+void taskscheduler::queue_yield(const std::function<void()>&) {}
+
+#endif  // _WIN32

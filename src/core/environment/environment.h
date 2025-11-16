@@ -10,7 +10,9 @@
 #include <string>
 #include <unordered_set>
 #include <xorstr/xorstr.h>
+#ifdef _WIN32
 #include <lazy_importer/include/lazy_importer.hpp>
+#endif
 #include <optional>
 #include <unordered_map>
 

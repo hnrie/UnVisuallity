@@ -2,6 +2,7 @@
 // Created by user on 24/04/2025.
 //
 #include <random>
+#include <stdexcept>
 #include "globals.h"
 #include "lapi.h"
 #include "lgc.h"
@@ -689,7 +690,11 @@ int lz4decompress(lua_State *L) {
 
 void environment::load_crypt_lib(lua_State *L) {
     if (sodium_init() < 0) {
+#ifdef _WIN32
         LI_FN(MessageBoxA).safe()(nullptr, OBF("failed to load libsodium, report this issue."), OBF("Visual"), MB_OK);
+#else
+        throw std::runtime_error("failed to load libsodium");
+#endif
     }
 
     lua_pushcclosure(L, crypt_base64encode, nullptr, 0);
