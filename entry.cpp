@@ -1,5 +1,7 @@
 #include "entry.h"
 
+#ifdef _WIN32
+
 #include <future>
 #include <fstream>
 #include <winternl.h>
@@ -273,3 +275,17 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserv
     }
     return TRUE;
 }
+
+#else
+
+#include <stdexcept>
+
+[[noreturn]] void entry(HMODULE) {
+    throw std::runtime_error("Visual is supported only on Windows builds.");
+}
+
+BOOL APIENTRY DllMain(HMODULE, DWORD, LPVOID) {
+    return FALSE;
+}
+
+#endif  // _WIN32

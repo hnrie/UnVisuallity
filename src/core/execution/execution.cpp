@@ -4,6 +4,8 @@
 
 #include "execution.h"
 
+#include <cstring>
+
 #include "lapi.h"
 #include "lstate.h"
 #include "lualib.h"
@@ -45,8 +47,8 @@ std::string compress_bytecode(std::string_view bytecode) {
     auto buffer = std::vector<char>(max_size + 8);
 
     // Copy RSB1 and data size into the buffer.
-    strcpy_s(&buffer[0], buffer.capacity(), OBF("RSB1"));
-    memcpy_s(&buffer[4], buffer.capacity(), &data_size, sizeof(data_size));
+    std::memcpy(buffer.data(), OBF("RSB1"), 4);
+    std::memcpy(buffer.data() + 4, &data_size, sizeof(data_size));
 
     // Copy compressed bytecode into the buffer.
     const auto compressed_size = ZSTD_compress(&buffer[8], max_size, bytecode.data(), data_size, ZSTD_maxCLevel());

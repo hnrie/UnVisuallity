@@ -4,7 +4,13 @@
 
 #pragma once
 
+#ifdef _WIN32
 #include <Windows.h>
+#else
+#include <cstdint>
+
+using HMODULE = void*;
+#endif
 #include <filesystem>
 #include <unordered_set>
 
