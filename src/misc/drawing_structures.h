@@ -17,6 +17,9 @@
 #include <vector>
 #include <unordered_map>
 
+/**
+ * @brief Simple RGB color representation interoperable with ImGui types.
+ */
 struct color_t
 {
     float r, g, b;
@@ -28,6 +31,9 @@ struct color_t
     operator ImColor() const { return { r, g, b, 1.f }; }
 };
 
+/**
+ * @brief Enumerates the fonts that can be used by drawing objects.
+ */
 enum class font_t {
     ui,
     system,
@@ -35,6 +41,9 @@ enum class font_t {
     mono_space
 };
 
+/**
+ * @brief Base drawable type exposed to Lua scripts.
+ */
 struct base_t {
     int z_index{ 1 };
     bool visible{ false };
@@ -48,6 +57,9 @@ struct base_t {
     virtual void draw_obj() = 0;
 };
 
+/**
+ * @brief Represents an ImGui line primitive.
+ */
 struct line_t : public base_t {
     double thickness{ 1.0 };
     ImVec2 from{ 0.0, 0.0 };
@@ -60,6 +72,9 @@ struct line_t : public base_t {
     void draw_obj() override;
 };
 
+/**
+ * @brief Represents an ImGui text primitive.
+ */
 struct text_t : public base_t {
     std::string str{ "Text" };
     double size{ 12 };
@@ -78,6 +93,9 @@ struct text_t : public base_t {
     void draw_obj() override;
 };
 
+/**
+ * @brief Represents an ImGui image primitive.
+ */
 struct image_t : public base_t {
     std::string data{};
     ImVec2 size{ 0.0, 0.0 };
@@ -91,6 +109,9 @@ struct image_t : public base_t {
     void draw_obj() override;
 };
 
+/**
+ * @brief Represents a circle primitive that can be filled or outlined.
+ */
 struct circle_t : public base_t {
     double thickness{ 1.0 };
     double num_sides{ 360.0 };
@@ -105,6 +126,9 @@ struct circle_t : public base_t {
     void draw_obj() override;
 };
 
+/**
+ * @brief Represents a rectangle primitive.
+ */
 struct square_t : public base_t {
     double thickness{ 1.0 };
     ImVec2 size{ 100,100 };
@@ -118,6 +142,9 @@ struct square_t : public base_t {
     void draw_obj() override;
 };
 
+/**
+ * @brief Represents a four-point polygon primitive.
+ */
 struct quad_t : public base_t {
     double thickness{ 1.0 };
     ImVec2 point_a{ 0.0, 0.0 };
@@ -133,6 +160,9 @@ struct quad_t : public base_t {
     void draw_obj() override;
 };
 
+/**
+ * @brief Represents a triangle primitive.
+ */
 struct triangle_t : public base_t {
     double thickness{ 1.0 };
     ImVec2 point_a{ 0.0, 0.0 };

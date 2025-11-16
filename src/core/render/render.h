@@ -17,6 +17,9 @@
 #include "backends/imgui_impl_dx11.h"
 #include "backends/imgui_impl_win32.h"
 
+/**
+ * @brief Hooks into the Roblox DirectX swap chain to render ImGui overlays.
+ */
 class renderer {
 private:
     static HWND windowhandle;
@@ -56,10 +59,22 @@ private:
 public:
     static ImFont* sigma_font;
 
-	static void initialize();
+    /**
+     * @brief Installs swap chain hooks and initializes ImGui resources.
+     */
+    static void initialize();
+
+    /**
+     * @brief Provides access to the underlying D3D11 device.
+     *
+     * @return ID3D11Device* Device interface associated with the Roblox renderer.
+     */
     [[nodiscard]] ID3D11Device* get_device() const { return this->device; };
 };
 
 namespace niggachain {
+    /**
+     * @brief Shared renderer instance accessible across modules.
+     */
     inline auto Renderer = std::make_unique<renderer>();
 }

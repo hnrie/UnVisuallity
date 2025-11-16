@@ -37,6 +37,9 @@ namespace VMValues {
         NOTE: a2 + = SET
     */
 
+    /**
+     * @brief Encodes pointer values by adding the object's address.
+     */
     template <typename T>
     struct VMValue1
     {
@@ -73,6 +76,9 @@ namespace VMValues {
         T storage{};
     };
 
+    /**
+     * @brief Encodes pointer values by subtracting the stored data from the object base.
+     */
     template <typename T>
     struct VMValue2
     {
@@ -103,6 +109,9 @@ namespace VMValues {
         T storage{};
     };
 
+    /**
+     * @brief Encodes pointer values by XORing with the owning object's address.
+     */
     template <typename T>
     struct VMValue3
     {
@@ -133,6 +142,9 @@ namespace VMValues {
         T storage{};
     };
 
+    /**
+     * @brief Encodes pointer values by subtracting the object address from the stored data.
+     */
     template <typename T>
     struct VMValue4
     {
