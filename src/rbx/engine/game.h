@@ -5,6 +5,13 @@
 #pragma once
 #include "game_structures.h"
 
+/**
+ * @brief Converts a relative virtual address to an absolute address inside RobloxPlayer.
+ *
+ * @tparam T Target pointer or function type.
+ * @param rva Relative virtual address provided by reverse engineering.
+ * @return T Absolute pointer that can be invoked directly.
+ */
 template <typename T>
 inline T rebase(const uintptr_t rva) {
 #ifdef _WIN32

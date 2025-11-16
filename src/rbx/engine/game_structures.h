@@ -17,6 +17,9 @@ struct LuaTable;
 
 namespace rbx {
 
+    /**
+     * @brief Lightweight reference that keeps a Luau thread alive across yields.
+     */
     struct weak_thread_ref_t {
         int _refs;
         lua_State *thread;
@@ -32,6 +35,9 @@ namespace rbx {
     concept TypeConstraint = std::is_base_of_v<Base, Derived>;
 
     namespace reflection { // ud rbxstu pasta
+        /**
+         * @brief Mirror of Roblox's reflection types used when marshaling Variant values.
+         */
         enum ReflectionType : uint32_t {
             ReflectionType_Void = 0x0,
             ReflectionType_Bool = 0x1,
@@ -111,6 +117,9 @@ namespace rbx {
         };
     }
 
+    /**
+     * @brief Base descriptor used by Roblox reflection metadata.
+     */
     struct descriptor_t // Base
     {
         void* vftable; // 0
@@ -125,6 +134,9 @@ namespace rbx {
         std::int64_t member;
     };
 
+    /**
+     * @brief Describes a concrete Roblox value type.
+     */
     struct rbx_type_t  : descriptor_t
     {
 
@@ -136,6 +148,9 @@ namespace rbx {
         bool is_enum; // 59
     };
 
+    /**
+     * @brief Function pointers required to construct or destroy Variant payloads.
+     */
     struct type_holder_t
     {
         void(*construct)(const char*, char*);
@@ -143,6 +158,9 @@ namespace rbx {
         void(*destruct)(char*);
     };
 
+    /**
+     * @brief Generic container used by Roblox to expose values via reflection.
+     */
     struct variant_t
     {
         struct storage_t
@@ -156,6 +174,9 @@ namespace rbx {
     };
 
 
+    /**
+     * @brief Controls whether the firing player is included in a remote event target list.
+     */
     enum event_target_inclusion : std::int32_t
     {
         only_target = 0x0,
@@ -163,11 +184,17 @@ namespace rbx {
     };
 
 
+    /**
+     * @brief Wrapper around Roblox's ref-counted SharedString type.
+     */
     struct shared_string_t {
         char pad_0[0x10];
         std::string content;
     };
 
+    /**
+     * @brief Holds peer information for RakNet networking.
+     */
     struct system_address_t {
         struct peerid {
             int peer_id;
@@ -176,12 +203,18 @@ namespace rbx {
         peerid remote_id;
     };
 
+    /**
+     * @brief Describes which peers should receive a remote event invocation.
+     */
     struct remoteevent_invocation_targetoptions_t
     {
         const system_address_t* target;
         event_target_inclusion isExcludeTarget;
     };
 
+    /**
+     * @brief Log categories understood by Roblox's output console.
+     */
     enum message_type {
         message_output = 0,
         message_info = 1,

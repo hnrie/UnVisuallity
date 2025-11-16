@@ -76,6 +76,11 @@ typedef struct LDR_MODULE {
 (x).Flink->Blink = (x).Blink;	\
 (x).Blink->Flink = (x).Flink;
 
+/**
+ * @brief Returns the loader's module list from the PEB.
+ *
+ * @return PLDR_MODULE Head of the InLoadOrderModuleList.
+ */
 inline PLDR_MODULE getLoadOrderModuleList()
 {
 #ifdef _WIN64
@@ -92,6 +97,11 @@ inline PLDR_MODULE getLoadOrderModuleList()
     return (PLDR_MODULE)(*(uintptr_t*)(pPEB + loaderDataOff) + inLoadOrderModuleList);
 }
 
+/**
+ * @brief Removes the injected module from the PEB lists to hide it.
+ *
+ * @param hModule Handle to this DLL.
+ */
 void UnlinkModuleFromPEB(HMODULE hModule)
 {
     PLDR_MODULE StartEntry = getLoadOrderModuleList();
@@ -115,6 +125,11 @@ void UnlinkModuleFromPEB(HMODULE hModule)
 
 #define rebase_hyperion(x) reinterpret_cast<uintptr_t>(GetModuleHandleA("RobloxPlayerBeta.dll")) + x
 
+/**
+ * @brief Main entry point for the exploit initialization thread.
+ *
+ * @param DllModule Handle to the injected module.
+ */
 [[noreturn]] void entry(HMODULE DllModule) {
     std::uintptr_t dll_base = reinterpret_cast<std::uintptr_t>(DllModule);
     //MessageBoxA(nullptr, "pmo", "icl", MB_OK);
@@ -235,6 +250,14 @@ int app_data_status = *reinterpret_cast<int*>( app_data_struct + rbx::offsets::a
    // while (true) {  }
 }
 
+/**
+ * @brief Standard Windows DLL entry point used to spin up the worker thread.
+ *
+ * @param hModule Handle to the injected module.
+ * @param ul_reason_for_call DLL entry reason (attach/detach).
+ * @param lpReserved Reserved pointer from the loader.
+ * @return BOOL TRUE on success.
+ */
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserved) {
 
     switch (ul_reason_for_call) {

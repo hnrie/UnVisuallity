@@ -12,6 +12,9 @@
 
 struct Closure;
 
+/**
+ * @brief Global state shared across the injector and Lua environment.
+ */
 namespace globals {
     inline bool initialized;
     inline bool authenticated;

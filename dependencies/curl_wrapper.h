@@ -15,6 +15,15 @@
 #undef OPTIONS
 #undef HEAD
 
+/**
+ * @brief Collects header data emitted by libcurl.
+ *
+ * @param Buffer Pointer to the raw header characters provided by libcurl.
+ * @param Size Size of a single header element in bytes.
+ * @param nItems Number of header elements pointed to by Buffer.
+ * @param Headers Output container that receives each sanitized header line.
+ * @return size_t Total number of bytes that were processed.
+ */
 inline size_t HeaderCallback(char* Buffer, size_t Size, size_t nItems, std::vector<std::string>* Headers) {
     size_t TotalSize = Size * nItems;
     std::string Header(Buffer, TotalSize);
@@ -28,12 +37,20 @@ inline size_t HeaderCallback(char* Buffer, size_t Size, size_t nItems, std::vect
     return TotalSize;
 }
 
+/**
+ * @brief Container that accumulates HTTP cookies during a request.
+ */
 class CCookies {
 public:
     CCookies() = default;
 
     std::vector<std::string> Cookies;
 
+    /**
+     * @brief Concatenates the collected cookies into a single header string.
+     *
+     * @return std::string Cookies formatted for the Cookie HTTP header.
+     */
     std::string Get() {
         std::string Result = "";
 
@@ -43,17 +60,30 @@ public:
         return Result;
     }
 
+    /**
+     * @brief Adds a cookie to the collection.
+     *
+     * @param Cookie Pre-formatted cookie name/value pair.
+     */
     void Insert(const std::string& Cookie) {
         Cookies.push_back(Cookie);
     }
 };
 
+/**
+ * @brief Container that builds HTTP headers for outgoing requests.
+ */
 class CHeaders {
 public:
     CHeaders() = default;
 
     std::vector<std::string> Headers;
 
+    /**
+     * @brief Concatenates all defined headers.
+     *
+     * @return std::string Headers formatted for logging or debugging.
+     */
     std::string Get() {
         std::string Result = "";
 
@@ -63,11 +93,20 @@ public:
         return Result;
     }
 
+    /**
+     * @brief Inserts a name/value pair header.
+     *
+     * @param HeaderName Name of the HTTP header.
+     * @param HeaderValue Value associated with the header name.
+     */
     void Insert(const std::string& HeaderName, const std::string& HeaderValue) {
         Headers.push_back(HeaderName + ": " + HeaderValue);
     }
 };
 
+/**
+ * @brief Represents an HTTP response returned by CCurlWrapper.
+ */
 class CResponse {
 public:
     CResponse() = default;
@@ -77,15 +116,34 @@ public:
     std::string StatusMessage;
     std::vector<std::string> Headers;
 
+    /**
+     * @brief Retrieves the raw response body.
+     *
+     * @return std::string Copy of the response body.
+     */
     std::string Get() { return Res; }
 
+    /**
+     * @brief Parses the response body into JSON.
+     *
+     * @return nlohmann::json JSON representation of the response body.
+     */
     nlohmann::json Json() {
         return nlohmann::json::parse(Res);
     }
 };
 
+/**
+ * @brief High level wrapper around libcurl supporting basic HTTP verbs.
+ */
 class CCurlWrapper {
 private:
+    /**
+     * @brief Converts HTTP status codes into descriptive strings.
+     *
+     * @param Status Numeric HTTP status code returned by a request.
+     * @return std::string Human readable description of the status code.
+     */
     static std::string ParseStatusCode(int Status) {
         switch (Status) {
             case 100: return "Continue";
@@ -155,6 +213,15 @@ private:
         };
     }
 
+    /**
+     * @brief Receives response body chunks emitted by libcurl.
+     *
+     * @param Contents Pointer to the received data buffer.
+     * @param Size Size of a single data element.
+     * @param nMemb Number of elements contained in the buffer.
+     * @param s Output string that accumulates the entire response body.
+     * @return size_t Number of bytes processed.
+     */
     static size_t CurlWriteCallback(void* Contents, size_t Size, size_t nMemb, std::string* s) {
         size_t NewLength = Size * nMemb;
         size_t OldLength = s->size();
@@ -170,6 +237,14 @@ private:
         return Size * nMemb;
     }
 public:
+    /**
+     * @brief Executes an HTTP GET request.
+     *
+     * @param Url Target URL to fetch.
+     * @param _Cookies Optional cookies appended to the request.
+     * @param _Headers Optional headers appended to the request.
+     * @return CResponse Response metadata and body for the completed request.
+     */
     CResponse GET(const std::string& Url, const CCookies& _Cookies = CCookies(), const CHeaders& _Headers = CHeaders()) {
         CResponse Response;
 
@@ -238,6 +313,15 @@ public:
         return Response;
     }
 
+/**
+ * @brief Executes an HTTP POST request using a JSON payload.
+ *
+ * @param Url Target URL to post to.
+ * @param Body Structured JSON payload sent in the request body.
+ * @param _Cookies Optional cookies appended to the request.
+ * @param _Headers Optional headers appended to the request.
+ * @return CResponse Response metadata and body for the completed request.
+ */
 CResponse POST(const std::string& Url, const nlohmann::json& Body, const CCookies& _Cookies = CCookies(), const CHeaders& _Headers = CHeaders()) {
     CResponse Response;
 
@@ -307,6 +391,15 @@ CResponse POST(const std::string& Url, const nlohmann::json& Body, const CCookie
 }
 
 
+    /**
+     * @brief Executes an HTTP POST request without enforcing a JSON content-type.
+     *
+     * @param Url Target URL to post to.
+     * @param Body Serialized payload to send.
+     * @param _Cookies Optional cookies appended to the request.
+     * @param _Headers Optional headers appended to the request.
+     * @return CResponse Response metadata and body for the completed request.
+     */
     CResponse POST_NOT_JSON(const std::string& Url, const std::string& Body, const CCookies& _Cookies, const CHeaders& _Headers) {
         CResponse Response;
 
@@ -357,6 +450,14 @@ CResponse POST(const std::string& Url, const nlohmann::json& Body, const CCookie
         return Response;
     }
 
+    /**
+     * @brief Executes an HTTP PUT request without a request body helper.
+     *
+     * @param Url Target URL to replace or create resources at.
+     * @param _Cookies Optional cookies appended to the request.
+     * @param _Headers Optional headers appended to the request.
+     * @return CResponse Response metadata and body for the completed request.
+     */
     CResponse PUT(const std::string& Url, const CCookies& _Cookies = CCookies(), const CHeaders& _Headers = CHeaders()) {
         CResponse Response;
 
@@ -405,6 +506,14 @@ CResponse POST(const std::string& Url, const nlohmann::json& Body, const CCookie
         return Response;
     }
 
+    /**
+     * @brief Executes an HTTP DELETE request.
+     *
+     * @param Url Target URL to delete resources from.
+     * @param _Cookies Optional cookies appended to the request.
+     * @param _Headers Optional headers appended to the request.
+     * @return CResponse Response metadata and body for the completed request.
+     */
     CResponse DELETE(const std::string& Url, const CCookies& _Cookies = CCookies(), const CHeaders& _Headers = CHeaders()) {
         CResponse Response;
 
@@ -452,6 +561,14 @@ CResponse POST(const std::string& Url, const nlohmann::json& Body, const CCookie
         return Response;
     }
 
+    /**
+     * @brief Executes an HTTP OPTIONS request.
+     *
+     * @param Url Target URL to inspect.
+     * @param _Cookies Optional cookies appended to the request.
+     * @param _Headers Optional headers appended to the request.
+     * @return CResponse Response metadata and body for the completed request.
+     */
     CResponse OPTIONS(const std::string& Url, const CCookies& _Cookies = CCookies(), const CHeaders& _Headers = CHeaders()) {
         CResponse Response;
 
@@ -500,6 +617,14 @@ CResponse POST(const std::string& Url, const nlohmann::json& Body, const CCookie
         return Response;
     }
 
+    /**
+     * @brief Executes an HTTP HEAD request.
+     *
+     * @param Url Target URL to query metadata from.
+     * @param _Cookies Optional cookies appended to the request.
+     * @param _Headers Optional headers appended to the request.
+     * @return CResponse Response metadata and body for the completed request.
+     */
     CResponse HEAD(const std::string& Url, const CCookies& _Cookies = CCookies(), const CHeaders& _Headers = CHeaders()) {
         CResponse Response;
 
@@ -550,4 +675,7 @@ CResponse POST(const std::string& Url, const nlohmann::json& Body, const CCookie
     }
 };
 
+/**
+ * @brief Shared curl wrapper instance used throughout the application.
+ */
 inline auto g_curl_wrapper = std::make_unique<CCurlWrapper>();
