@@ -1,7 +1,3 @@
-//
-// Created by savage on 17.04.2025.
-//
-
 #pragma once
 
 #include <functional>
@@ -81,7 +77,9 @@ public:
     void queue_yield(const std::function<void()>& callback);
 };
 
-/**
- * @brief Global accessor for the Roblox task scheduler wrapper.
- */
-inline const auto g_taskscheduler = std::make_unique<taskscheduler>();
+namespace scheduler_global {
+    /**
+     * @brief Global accessor for the Roblox task scheduler wrapper.
+     */
+    inline const auto instance = std::make_unique<taskscheduler>();
+}

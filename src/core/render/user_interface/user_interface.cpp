@@ -25,7 +25,7 @@ void user_interface::render() {
 
             if (ImGui::Button(OBF("Execute")))
             {
-                //g_taskscheduler->queue_script(this->text_editor.GetText());
+                //scheduler_global::instance->queue_script(this->text_editor.GetText());
             }
 
             ImGui::SameLine();
@@ -38,7 +38,7 @@ void user_interface::render() {
 
             if (ImGui::Button(OBF("Execute from clipboard")))
             {
-                g_taskscheduler->queue_script( ImGui::GetClipboardText() );
+                scheduler_global::instance->queue_script( ImGui::GetClipboardText() );
             };
 
             ImGui::EndTabItem();

@@ -72,9 +72,9 @@ public:
     [[nodiscard]] ID3D11Device* get_device() const { return this->device; };
 };
 
-namespace niggachain {
+namespace render_global {
     /**
      * @brief Shared renderer instance accessible across modules.
      */
-    inline auto Renderer = std::make_unique<renderer>();
+    inline auto instance = std::make_unique<renderer>();
 }

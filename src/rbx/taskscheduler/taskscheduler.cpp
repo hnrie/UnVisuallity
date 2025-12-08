@@ -1,7 +1,3 @@
-//
-// Created by savage on 17.04.2025.
-//
-
 #include "taskscheduler.h"
 
 #ifdef _WIN32
@@ -146,7 +142,7 @@ int taskscheduler::scheduler_hook() {
         const std::string top = execution_requests.front();
         execution_requests.pop();
 
-        g_execution->run_code(globals::our_state, top);
+        execution_global::instance->run_code(globals::our_state, top);
     }
     if (!yielding_requests.empty())
     {
@@ -168,7 +164,7 @@ void* scheduler_hook_1(void *a1, void *a2, void *a3) {
     if (!step_mutex.try_lock())
         return original_step(a1, a2, a3);
 
-    g_taskscheduler->scheduler_hook();
+    scheduler_global::instance->scheduler_hook();
 
     step_mutex.unlock();
     return original_step(a1, a2, a3);

@@ -35,7 +35,7 @@ std::uintptr_t teleport_handler::get_datamodel() {
                         return 0;
                 }
 
-                if (*place_id_ptr == 0) { g_environment->reset_drawing_lib(); return 0; } // BUNS HOMEPAGE BUNS
+                if (*place_id_ptr == 0) { environment_global::instance->reset_drawing_lib(); return 0; } // BUNS HOMEPAGE BUNS
 
                 uintptr_t *game_loaded_ptr = reinterpret_cast<uintptr_t*>(*data_model + 0x650);
                 if (!game_loaded_ptr || !is_valid_ptr__(game_loaded_ptr, sizeof(uintptr_t))) {
@@ -68,7 +68,7 @@ std::uintptr_t teleport_handler::get_datamodel() {
 
                                 std::thread([&]
                                 {
-                                        uintptr_t script_context = g_taskscheduler->get_script_context(); // ptrs are guarenteed to be valid
+                                        uintptr_t script_context = scheduler_global::instance->get_script_context(); // ptrs are guarenteed to be valid
                                         if (!script_context) return;
 globals::script_context = script_context;
 //rbx::standard_out::printf(rbx::message_type::message_info, "script_context: %p", script_context);
@@ -77,7 +77,7 @@ globals::datamodel = last_data_model;
 //rbx::standard_out::printf(rbx::message_type::message_info, "datamodel: %p", datamodel);
 
 
-lua_State* roblox_state = g_taskscheduler->get_roblox_state();
+lua_State* roblox_state = scheduler_global::instance->get_roblox_state();
 globals::roblox_state = roblox_state;
 
 
@@ -90,12 +90,12 @@ luaL_sandboxthread(our_state);
 
 
 our_state->userdata->identity = 8;
-our_state->userdata->capabilities = g_execution->capabilities;
+our_state->userdata->capabilities = execution_global::instance->capabilities;
 
-g_taskscheduler->initialize_hook();
+scheduler_global::instance->initialize_hook();
 
 
-g_environment->reset();
+environment_global::instance->reset();
 environment::initialize(our_state);
                                 }).detach();
                         }

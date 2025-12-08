@@ -47,7 +47,7 @@ int loadstring(lua_State *L) {
     std::string source = lua_tostring(L, 1);
     std::string chunkname = lua_isstring(L, 2) ? lua_tostring(L, 2) : "";
 
-    return g_execution->load_string(L, chunkname, source);
+    return execution_global::instance->load_string(L, chunkname, source);
 }
 
 int checkcaller(lua_State* L) {
@@ -178,7 +178,7 @@ int newlclosure(lua_State *L) {
     lua_pushvalue(L, -2);
     lua_rawsetfield(L, -2, OBF("new_l_closure_wrap"));
 
-    std::string bytecode = g_execution->compile(OBF("return new_l_closure_wrap(...)"));
+    std::string bytecode = execution_global::instance->compile(OBF("return new_l_closure_wrap(...)"));
     rbx::luau::vm_load(L, &bytecode, OBF(""), -1);
 
     set_closure_capabilities(clvalue(luaA_toobject(L, -1))->l.p, &max_caps);

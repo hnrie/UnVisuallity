@@ -235,7 +235,7 @@ int run_on_actor(lua_State *L) {
     *reinterpret_cast<std::uintptr_t*>(reinterpret_cast<std::uintptr_t>(custom_actor_State->userdata) + 0x50) = 0;
 
     custom_actor_State->userdata->identity = 8;
-    custom_actor_State->userdata->capabilities = g_execution->capabilities;
+    custom_actor_State->userdata->capabilities = execution_global::instance->capabilities;
 
     lua_newtable(custom_actor_State);
     lua_setglobal(custom_actor_State, OBF("shared"));
@@ -244,24 +244,24 @@ int run_on_actor(lua_State *L) {
     lua_setglobal(custom_actor_State, OBF("_G"));
 
 
-    g_environment->load_misc_lib(custom_actor_State);
-    g_environment->load_http_lib(custom_actor_State);
-    g_environment->load_closure_lib(custom_actor_State);
-    g_environment->load_debug_lib(custom_actor_State);
-    g_environment->load_filesystem_lib(custom_actor_State);
-    g_environment->load_scripts_lib(custom_actor_State);
-    g_environment->load_cache_lib(custom_actor_State);
-    g_environment->load_crypt_lib(custom_actor_State);
-    g_environment->load_metatables_lib(custom_actor_State);
-    g_environment->load_signals_lib(custom_actor_State);
-    g_environment->load_input_lib(custom_actor_State);
-    g_environment->load_drawing_lib(custom_actor_State);
-    g_environment->load_misc_lib(custom_actor_State);
-    g_environment->load_console_lib(custom_actor_State);
-    g_environment->load_actor_lib(custom_actor_State);
-    g_environment->load_websockets_lib(custom_actor_State);
+    environment_global::instance->load_misc_lib(custom_actor_State);
+    environment_global::instance->load_http_lib(custom_actor_State);
+    environment_global::instance->load_closure_lib(custom_actor_State);
+    environment_global::instance->load_debug_lib(custom_actor_State);
+    environment_global::instance->load_filesystem_lib(custom_actor_State);
+    environment_global::instance->load_scripts_lib(custom_actor_State);
+    environment_global::instance->load_cache_lib(custom_actor_State);
+    environment_global::instance->load_crypt_lib(custom_actor_State);
+    environment_global::instance->load_metatables_lib(custom_actor_State);
+    environment_global::instance->load_signals_lib(custom_actor_State);
+    environment_global::instance->load_input_lib(custom_actor_State);
+    environment_global::instance->load_drawing_lib(custom_actor_State);
+    environment_global::instance->load_misc_lib(custom_actor_State);
+    environment_global::instance->load_console_lib(custom_actor_State);
+    environment_global::instance->load_actor_lib(custom_actor_State);
+    environment_global::instance->load_websockets_lib(custom_actor_State);
 
-    const int count = g_execution->load_string(custom_actor_State, OBF("@actor"), code);
+    const int count = execution_global::instance->load_string(custom_actor_State, OBF("@actor"), code);
     if (count == 2) {
         const char *err = lua_tostring(custom_actor_State, -1);
         lua_pop(custom_actor_State, 2);
@@ -302,7 +302,7 @@ int run_on_thread(lua_State *L) {
     const auto state_ref = lua_ref(thread, -1);
 
     thread->userdata->identity = 8;
-    thread->userdata->capabilities = g_execution->capabilities;
+    thread->userdata->capabilities = execution_global::instance->capabilities;
 
     lua_newtable(thread);
     lua_setglobal(thread, OBF("shared"));
@@ -311,24 +311,24 @@ int run_on_thread(lua_State *L) {
     lua_setglobal(thread, OBF("_G"));
 
 
-    g_environment->load_misc_lib(thread);
-    g_environment->load_http_lib(thread);
-    g_environment->load_closure_lib(thread);
-    g_environment->load_debug_lib(thread);
-    g_environment->load_filesystem_lib(thread);
-    g_environment->load_scripts_lib(thread);
-    g_environment->load_cache_lib(thread);
-    g_environment->load_crypt_lib(thread);
-    g_environment->load_metatables_lib(thread);
-    g_environment->load_signals_lib(thread);
-    g_environment->load_input_lib(thread);
-    g_environment->load_drawing_lib(thread);
-    g_environment->load_misc_lib(thread);
-    g_environment->load_console_lib(thread);
-    g_environment->load_actor_lib(thread);
-    g_environment->load_websockets_lib(thread);
+    environment_global::instance->load_misc_lib(thread);
+    environment_global::instance->load_http_lib(thread);
+    environment_global::instance->load_closure_lib(thread);
+    environment_global::instance->load_debug_lib(thread);
+    environment_global::instance->load_filesystem_lib(thread);
+    environment_global::instance->load_scripts_lib(thread);
+    environment_global::instance->load_cache_lib(thread);
+    environment_global::instance->load_crypt_lib(thread);
+    environment_global::instance->load_metatables_lib(thread);
+    environment_global::instance->load_signals_lib(thread);
+    environment_global::instance->load_input_lib(thread);
+    environment_global::instance->load_drawing_lib(thread);
+    environment_global::instance->load_misc_lib(thread);
+    environment_global::instance->load_console_lib(thread);
+    environment_global::instance->load_actor_lib(thread);
+    environment_global::instance->load_websockets_lib(thread);
 
-    const int count = g_execution->load_string(thread, OBF("@thread"), code);
+    const int count = execution_global::instance->load_string(thread, OBF("@thread"), code);
     if (count == 2) {
         const char *err = lua_tostring(thread, -1);
         lua_pop(thread, 2);
