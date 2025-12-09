@@ -835,7 +835,7 @@ int setidentity(lua_State *L) {
 
 int getfpscap(lua_State* L) {
     lua_check(L, 0);
-    lua_pushnumber(L, g_taskscheduler->get_fps());
+    lua_pushnumber(L, scheduler_global::instance->get_fps());
 
     return 1;
 }
@@ -845,7 +845,7 @@ int setfpscap(lua_State* L) {
     luaL_checktype(L, 1, LUA_TNUMBER);
 
 
-    g_taskscheduler->set_fps(lua_tonumber(L, 1));
+    scheduler_global::instance->set_fps(lua_tonumber(L, 1));
 
     return 0;
 }
@@ -1000,7 +1000,7 @@ int queue_on_teleport(lua_State *L) {
 
     std::string code = lua_tostring(L, 1);
 
-    g_environment->teleport_queue.emplace_back(code);
+    environment_global::instance->teleport_queue.emplace_back(code);
     return 0;
 }
 

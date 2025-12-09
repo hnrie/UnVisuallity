@@ -33,7 +33,7 @@ int yielding::yield(lua_State *thread, const std::function<yielded_func_t()>& fu
                         return;
                     }
 
-                    g_taskscheduler->queue_yield([=]() -> void
+                    scheduler_global::instance->queue_yield([=]() -> void
                                     {
 
                                         int res_count = 0;

@@ -19,8 +19,8 @@ std::mutex scriptable_map_lock{};
 std::optional<bool> get_scriptable_state(uintptr_t instance, const std::string& property_name) noexcept {
     std::unique_lock l{scriptable_map_lock};
 
-    if (g_environment->scriptable_map.contains(instance)) {
-        const auto properties = g_environment->scriptable_map[instance];
+    if (environment_global::instance->scriptable_map.contains(instance)) {
+        const auto properties = environment_global::instance->scriptable_map[instance];
 
         if (properties.contains(property_name))
             return properties.at(property_name);
@@ -33,7 +33,7 @@ void change_scriptable_state(uintptr_t instance, const std::string &property_nam
                              bool state) noexcept {
     std::unique_lock l{ scriptable_map_lock };
 
-    g_environment->scriptable_map[instance][property_name] = state;
+    environment_global::instance->scriptable_map[instance][property_name] = state;
 }
 
 static std::vector<std::string> blacklisted_functions = {
@@ -397,23 +397,23 @@ void environment::initialize(lua_State *L) {
     lua_newtable(L);
     lua_setglobal(L, OBF("_G"));
 
-    g_environment->load_misc_lib(L);
-    g_environment->load_http_lib(L);
-    g_environment->load_closure_lib(L);
-    g_environment->load_debug_lib(L);
-    g_environment->load_filesystem_lib(L);
-    g_environment->load_scripts_lib(L);
-    g_environment->load_cache_lib(L);
-    g_environment->load_crypt_lib(L);
-    g_environment->load_metatables_lib(L);
-    g_environment->load_signals_lib(L);
-    g_environment->load_input_lib(L);
-    g_environment->load_drawing_lib(L);
-    g_environment->load_misc_lib(L);
-    g_environment->load_console_lib(L);
-    g_environment->load_actor_lib(L);
-    g_environment->load_websockets_lib(L);
-  //  g_environment->load_raknet_lib(L);
+    environment_global::instance->load_misc_lib(L);
+    environment_global::instance->load_http_lib(L);
+    environment_global::instance->load_closure_lib(L);
+    environment_global::instance->load_debug_lib(L);
+    environment_global::instance->load_filesystem_lib(L);
+    environment_global::instance->load_scripts_lib(L);
+    environment_global::instance->load_cache_lib(L);
+    environment_global::instance->load_crypt_lib(L);
+    environment_global::instance->load_metatables_lib(L);
+    environment_global::instance->load_signals_lib(L);
+    environment_global::instance->load_input_lib(L);
+    environment_global::instance->load_drawing_lib(L);
+    environment_global::instance->load_misc_lib(L);
+    environment_global::instance->load_console_lib(L);
+    environment_global::instance->load_actor_lib(L);
+    environment_global::instance->load_websockets_lib(L);
+  //  environment_global::instance->load_raknet_lib(L);
 
 
     old_namecall = hook_game_metamethod(OBF("__namecall"), &namecall_hook);
@@ -431,13 +431,13 @@ void environment::initialize(lua_State *L) {
                 std::copy(std::istreambuf_iterator<char>(fs_stream), std::istreambuf_iterator<char>(), std::back_inserter(f_content));
                 fs_stream.close();
 
-                g_taskscheduler->queue_script(f_content);
+                scheduler_global::instance->queue_script(f_content);
             }
         }
     }
 
     for (const auto& scripto: environment::teleport_queue) {
-        g_taskscheduler->queue_script(scripto);
+        scheduler_global::instance->queue_script(scripto);
     }
     environment::teleport_queue.clear();
 

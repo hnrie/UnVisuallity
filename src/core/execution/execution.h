@@ -1,55 +1,58 @@
-//
-// Created by savage on 17.04.2025.
-//
-
 #pragma once
+
 #include <string>
+#include <vector>
+#include <memory>
+
 #include "lua.h"
+#include "lstate.h"
 
 /**
- * @brief Handles code compilation and execution inside the Roblox Lua runtime.
+ * @brief Manages script execution, compilation, and environment setup.
  */
 class execution {
 public:
-    uintptr_t capabilities = 0xFFFFFFFFFFFFFFFF;
+    static uintptr_t capabilities;
 
     /**
-     * @brief Compiles Luau source code to bytecode.
+     * @brief Compiles Luau source code into bytecode.
      *
-     * @param source Luau source code to compile.
-     * @return std::string Serialized bytecode output.
+     * @param code Source code string.
+     * @return std::string Compiled bytecode.
      */
-    std::string compile(const std::string& source);
+    static std::string compile(const std::string& code);
 
     /**
-     * @brief Decompresses serialized bytecode into plain text.
+     * @brief Loads and executes a script string in the given Lua state.
      *
-     * @param Bytecode Compressed bytecode blob.
-     * @return std::string Decompressed bytecode string.
+     * @param L Lua state to execute in.
+     * @param chunk_name Name of the script chunk (for debug info).
+     * @param code Source code to execute.
+     * @return int Status code of the execution.
      */
-    std::string decompress_bytecode(const std::string &Bytecode) const;
+    int load_string(lua_State* L, const std::string& chunk_name, const std::string& code);
 
     /**
-     * @brief Loads a script into the provided Lua state without executing it.
+     * @brief Decompresses custom compressed bytecode.
      *
-     * @param L Lua state receiving the chunk.
-     * @param chunk Script contents.
-     * @param chunk_name Friendly name for debugging.
-     * @return int Result code from lua_load.
+     * @param source Compressed bytecode string.
+     * @return std::string Decompressed bytecode.
      */
-    int load_string(lua_State* L, const std::string& chunk, const std::string& chunk_name);
+    [[nodiscard]] std::string decompress_bytecode(const std::string& source) const;
 
     /**
-     * @brief Compiles and executes a script immediately.
+     * @brief Runs a script in a new thread within the given Lua state.
      *
-     * @param L Lua state used for execution.
-     * @param chunk Script contents to run.
-     * @return bool True when execution succeeded.
+     * @param state Lua state to create the thread in.
+     * @param code Source code to execute.
+     * @return bool True if execution started successfully.
      */
-    bool run_code(lua_State* L, const std::string& chunk);
+    bool run_code(lua_State* state, const std::string& code);
 };
 
-/**
- * @brief Global accessor for the execution subsystem.
- */
-inline const auto g_execution = std::make_unique<execution>();
+namespace execution_global {
+    /**
+     * @brief Shared execution instance.
+     */
+    inline const auto instance = std::make_unique<execution>();
+}

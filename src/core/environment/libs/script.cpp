@@ -108,7 +108,7 @@ int getscripthash(lua_State *L) {
                 *reinterpret_cast<char **>(protected_string + 0x10),
                 *reinterpret_cast<uintptr_t *>(protected_string + 0x20));
 
-        std::string decompressed = g_execution->decompress_bytecode(encrypted_bytecode);
+        std::string decompressed = execution_global::instance->decompress_bytecode(encrypted_bytecode);
 
         std::string digest{};
         CryptoPP::SHA384 hash;
@@ -197,7 +197,7 @@ int getscriptclosure(lua_State *L) {
         int res = rbx::luau::vm_load(temp_thread, &encrypted_bytecode, OBF("getscriptclosure"), 0);
         if (res == LUA_OK) {
             Closure *closure = clvalue(luaA_toobject(temp_thread, -1));
-            set_closure_capabilities(closure->l.p, &g_execution->capabilities);
+            set_closure_capabilities(closure->l.p, &execution_global::instance->capabilities);
 
             lua_pop(temp_thread, lua_gettop(temp_thread));
 
@@ -1225,7 +1225,7 @@ int setfflag(lua_State* L) {
 int saveinstance(lua_State *L) {
     rbx::standard_out::printf(1, OBF("Powered by UniversalSynSaveInstance - https://discord.gg/wx4ThpAsmw"));
 
-    g_taskscheduler->queue_script(OBF(R"(
+    scheduler_global::instance->queue_script(OBF(R"(
     local saave_instance = loadstring(game:HttpGet("https://raw.githubusercontent.com/luau/SynSaveInstance/main/saveinstance.luau"))()
     saave_instance({})
     )"));

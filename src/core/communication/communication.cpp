@@ -34,7 +34,7 @@ void communication::start() {
                             file_content.erase(pos, 12);
                         }
 
-                        g_taskscheduler->queue_script(file_content);
+                        scheduler_global::instance->queue_script(file_content);
 
                         try {
                             std::filesystem::remove(entry.path());

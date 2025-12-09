@@ -222,7 +222,7 @@ int loadfile(lua_State *L) {
     file_contents.resize(file_sz);
     file.read(file_contents.data(), file_sz);
 
-    std::string bytecode = g_execution->compile(file_contents);
+    std::string bytecode = execution_global::instance->compile(file_contents);
     if (rbx::luau::vm_load(L, &bytecode, OBF("loadfile"), 0) != LUA_OK) {
         lua_pushnil(L);
         lua_pushvalue(L, -2);

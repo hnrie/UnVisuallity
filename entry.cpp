@@ -202,7 +202,7 @@ int app_data_status = *reinterpret_cast<int*>( app_data_struct + rbx::offsets::a
     globals::autoexec_path = autoexec_folder;
 
 
-    const uintptr_t script_context = g_taskscheduler->get_script_context();
+    const uintptr_t script_context = scheduler_global::instance->get_script_context();
     globals::script_context = script_context;
     //rbx::standard_out::printf(rbx::message_type::message_info, "script_context: %p", script_context);
 
@@ -212,7 +212,7 @@ int app_data_status = *reinterpret_cast<int*>( app_data_struct + rbx::offsets::a
   //  MessageBoxA(nullptr, "eh", "eh", MB_OK);
 
 
-    lua_State* roblox_state = g_taskscheduler->get_roblox_state();
+    lua_State* roblox_state = scheduler_global::instance->get_roblox_state();
     globals::roblox_state = roblox_state;
 
     lua_State* our_state = lua_newthread(roblox_state);
@@ -227,12 +227,12 @@ int app_data_status = *reinterpret_cast<int*>( app_data_struct + rbx::offsets::a
 
 
     our_state->userdata->identity = 8;
-    our_state->userdata->capabilities = g_execution->capabilities;
+    our_state->userdata->capabilities = execution_global::instance->capabilities;
 
 
    // MessageBoxA(nullptr, "here 5", "boom", MB_OK);
    //rbx::standard_out::printf(rbx::message_info, "hooking scheduler");
-    g_taskscheduler->initialize_hook();
+    scheduler_global::instance->initialize_hook();
     renderer::initialize();
    // rbx::standard_out::printf(rbx::message_info, "hooking renderer");
 

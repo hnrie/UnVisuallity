@@ -127,7 +127,7 @@ void circle_t::draw_obj()
 ImTextureID create_image_texture(const std::vector<uint8_t> &data, const int width,
                                               const int height) {
 
-    const auto device = niggachain::Renderer->get_device();
+    const auto device = render_global::instance->get_device();
 
     D3D11_TEXTURE2D_DESC desc;
     ZeroMemory(&desc, sizeof(desc));
